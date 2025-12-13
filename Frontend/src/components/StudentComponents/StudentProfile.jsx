@@ -1,17 +1,17 @@
 import React from 'react';
 import { Mail, Phone, Calendar, BookOpen, Edit2 } from 'lucide-react';
 
-export default function ProfilePage() {
+export default function StudentProfile() {
     // Mock trainer profile data
     const trainerData = {
-        name: 'Alex Johnson',
-        employeeId: 'TR-2024-001',
+        name: 'Johnson',
+        RollNo: 'TR-2024-001',
         department: 'Training & Development',
-        designation: 'Senior Trainer',
+        Section: 'Section A',
         email: 'alex.johnson@company.com',
         phone: '+1 (555) 123-4567',
-        joiningDate: 'January 15, 2022',
-        qualifications: 'MBA, Certified Corporate Trainer, ITIL Certified',
+        // joiningDate: 'January 15, 2022',
+        // qualifications: 'MBA, Certified Corporate Trainer, ITIL Certified',
     };
 
     return (
@@ -19,8 +19,8 @@ export default function ProfilePage() {
             <div className="max-w-4xl mx-auto animate-fadeIn">
                 {/* Header */}
                 <div className="mb-8">
-                    <h1 className="text-4xl font-bold text-gray-900 mb-2">Trainer Profile</h1>
-                    <p className="text-gray-600">View and manage your professional information</p>
+                    <h1 className="text-4xl font-bold text-gray-900 mb-2 ">Student Profile</h1>
+                    <p className="text-gray-600">View your Curriculam information</p>
                 </div>
 
                 {/* Profile Card Section */}
@@ -41,7 +41,7 @@ export default function ProfilePage() {
 
                             <div className="flex-1">
                                 <h2 className="text-3xl font-bold text-gray-900 mb-1">{trainerData.name}</h2>
-                                <p className="text-indigo-600 font-semibold text-lg">{trainerData.designation}</p>
+                                <p className="text-indigo-600 font-semibold text-lg">{trainerData.Section}</p>
                             </div>
 
                             {/* Edit Button */}
@@ -59,9 +59,9 @@ export default function ProfilePage() {
                             {/* Employee ID */}
                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
                                 <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block">
-                                    Employee ID
+                                    Roll No.
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.employeeId}</p>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData.RollNo}</p>
                             </div>
 
                             {/* Department */}
@@ -91,22 +91,22 @@ export default function ProfilePage() {
                             </div>
 
                             {/* Joining Date */}
-                            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
-                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
+                            {/* <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300"> */}
+                                {/* <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
                                     <Calendar size={16} className="text-indigo-600" />
                                     Joining Date
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.joiningDate}</p>
-                            </div>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData.joiningDate}</p> */}
+                            {/* </div> */}
 
                             {/* Qualifications */}
-                            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                            {/* <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
                                 <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
                                     <BookOpen size={16} className="text-indigo-600" />
                                     Qualifications
                                 </label>
                                 <p className="text-gray-900 text-lg font-medium">{trainerData.qualifications}</p>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -118,7 +118,7 @@ export default function ProfilePage() {
             </div>
 
             {/* Animations */}
-            <style jsx>{`
+            <style>{`
                 @keyframes fadeIn {
                     from {
                         opacity: 0;

@@ -9,7 +9,7 @@ const MarksEntryPage = () => {
     const [filters, setFilters] = useState({
         section: 'A',
         department: 'CS',
-        year: '2024'
+        year: '2025'
     });
 
     const [marks, setMarks] = useState([
@@ -36,8 +36,8 @@ const MarksEntryPage = () => {
             id: 2,
             rollNo: 'CS002',
             name: 'Priya Singh',
-            section: 'A',
-            department: 'CS',
+            section: 'B',
+            department: 'IT',
             year: '2024',
             technical: {
                 mockInterview: 28,
@@ -55,9 +55,9 @@ const MarksEntryPage = () => {
             id: 3,
             rollNo: 'CS003',
             name: 'Rajesh Patel',
-            section: 'A',
-            department: 'CS',
-            year: '2024',
+            section: 'C',
+            department: 'EC',
+            year: '2025',
             technical: {
                 mockInterview: 22,
                 oops: 11,
@@ -72,11 +72,23 @@ const MarksEntryPage = () => {
         }
     ]);
 
+
+    const [filterData,setFilterData]=useState(marks);
+
     const [saveStatus, setSaveStatus] = useState('');
 
     // ==================== HANDLERS ====================
     const handleFilterChange = (filterName, value) => {
-        setFilters(prev => ({ ...prev, [filterName]: value }));
+        
+        setFilterData(
+            marks.filter(student => 
+                (filterName === 'section' ? student.section === value : true) &&
+                (filterName === 'department' ? student.department === value : true) &&
+                (filterName === 'year' ? student.year === value : true)
+            )
+        );
+
+    
     };
 
     const handleMarkChange = (studentId, fieldPath, value) => {
@@ -147,7 +159,7 @@ const MarksEntryPage = () => {
                         onChange={(e) => handleFilterChange('year', e.target.value)}
                         className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent appearance-none bg-white cursor-pointer transition hover:border-gray-400"
                     >
-                        <option value="2024">2024</option>
+                     
                         <option value="2025">2025</option>
                         <option value="2026">2026</option>
                     </select>
@@ -235,7 +247,7 @@ const MarksEntryPage = () => {
 
                         {/* Table Body */}
                         <tbody>
-                            {marks.map((student, idx) => (
+                            {filterData.map((student, idx) => (
                                 <tr
                                     key={student.id}
                                     className={`border-b border-gray-200 transition hover:bg-indigo-50 ${

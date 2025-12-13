@@ -23,7 +23,7 @@ export default function TrainersPage() {
             case 'marks-entry':
                 return <MarksEntryPage />;
             case 'all-marks':
-                return <AllStudentsMarksPage />;
+                return <AllStudentsMarksPage/>;
             default:
                 return <ProfilePage />;
         }
