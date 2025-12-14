@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Menu, X, User, BookOpen, BarChart3, LogOut } from 'lucide-react';
 import ProfilePage from '../Profile/ProfilePage';
 import AllStudentsMarksPage from '../AllStudentsMarks/AllStudentsMarksPage';
@@ -8,6 +8,22 @@ import StudentLeaderboard from './StudentLeaderboard';
 export default function StudentPage() {
     const [activeSection, setActiveSection] = useState('profile');
     const [sidebarOpen, setSidebarOpen] = useState(false);
+     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    // Handler function
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup on unmount
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []); // Empty dependency array -> run only on mount/unmount
 
     // Navigation items
     const navItems = [
@@ -119,11 +135,15 @@ export default function StudentPage() {
                             {navItems.find((item) => item.id === activeSection)?.label}
                         </h2>
                     </div>
-                    <div className="md:hidden">
+                      {windowWidth<768  ?  <div className="md:hidden">
                         <h2 className="text-lg font-semibold text-gray-900">
                             {navItems.find((item) => item.id === activeSection)?.label}
                         </h2>
-                    </div>
+                    </div>:(
+                    <div>
+                    <img src="/KRMU-Logo-NAAC.webp" alt="KRMU-LOGO" width={300} /></div>
+                    )
+                    }
                     <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">
                         <User size={20} className="text-indigo-600" />
                     </div>
