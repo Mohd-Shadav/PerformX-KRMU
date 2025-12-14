@@ -1,0 +1,5402 @@
+[
+  {
+    "rollno": "2301010001",
+    "name": "STUDENT 001",
+    "email": "2301010001@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010002",
+    "name": "STUDENT 002",
+    "email": "2301010002@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010003",
+    "name": "STUDENT 003",
+    "email": "2301010003@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010004",
+    "name": "STUDENT 004",
+    "email": "2301010004@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010005",
+    "name": "STUDENT 005",
+    "email": "2301010005@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010006",
+    "name": "STUDENT 006",
+    "email": "2301010006@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010007",
+    "name": "STUDENT 007",
+    "email": "2301010007@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010008",
+    "name": "STUDENT 008",
+    "email": "2301010008@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010009",
+    "name": "STUDENT 009",
+    "email": "2301010009@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010010",
+    "name": "STUDENT 010",
+    "email": "2301010010@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010011",
+    "name": "STUDENT 011",
+    "email": "2301010011@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010012",
+    "name": "STUDENT 012",
+    "email": "2301010012@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010013",
+    "name": "STUDENT 013",
+    "email": "2301010013@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010014",
+    "name": "STUDENT 014",
+    "email": "2301010014@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010015",
+    "name": "STUDENT 015",
+    "email": "2301010015@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010016",
+    "name": "STUDENT 016",
+    "email": "2301010016@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010017",
+    "name": "STUDENT 017",
+    "email": "2301010017@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010018",
+    "name": "STUDENT 018",
+    "email": "2301010018@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010019",
+    "name": "STUDENT 019",
+    "email": "2301010019@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010020",
+    "name": "STUDENT 020",
+    "email": "2301010020@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010021",
+    "name": "STUDENT 021",
+    "email": "2301010021@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010022",
+    "name": "STUDENT 022",
+    "email": "2301010022@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010023",
+    "name": "STUDENT 023",
+    "email": "2301010023@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010024",
+    "name": "STUDENT 024",
+    "email": "2301010024@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010025",
+    "name": "STUDENT 025",
+    "email": "2301010025@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010026",
+    "name": "STUDENT 026",
+    "email": "2301010026@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010027",
+    "name": "STUDENT 027",
+    "email": "2301010027@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010028",
+    "name": "STUDENT 028",
+    "email": "2301010028@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010029",
+    "name": "STUDENT 029",
+    "email": "2301010029@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010030",
+    "name": "STUDENT 030",
+    "email": "2301010030@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010031",
+    "name": "STUDENT 031",
+    "email": "2301010031@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010032",
+    "name": "STUDENT 032",
+    "email": "2301010032@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010033",
+    "name": "STUDENT 033",
+    "email": "2301010033@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010034",
+    "name": "STUDENT 034",
+    "email": "2301010034@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010035",
+    "name": "STUDENT 035",
+    "email": "2301010035@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010036",
+    "name": "STUDENT 036",
+    "email": "2301010036@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010037",
+    "name": "STUDENT 037",
+    "email": "2301010037@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010038",
+    "name": "STUDENT 038",
+    "email": "2301010038@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010039",
+    "name": "STUDENT 039",
+    "email": "2301010039@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010040",
+    "name": "STUDENT 040",
+    "email": "2301010040@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010041",
+    "name": "STUDENT 041",
+    "email": "2301010041@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010042",
+    "name": "STUDENT 042",
+    "email": "2301010042@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010043",
+    "name": "STUDENT 043",
+    "email": "2301010043@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010044",
+    "name": "STUDENT 044",
+    "email": "2301010044@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010045",
+    "name": "STUDENT 045",
+    "email": "2301010045@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010046",
+    "name": "STUDENT 046",
+    "email": "2301010046@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010047",
+    "name": "STUDENT 047",
+    "email": "2301010047@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010048",
+    "name": "STUDENT 048",
+    "email": "2301010048@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010049",
+    "name": "STUDENT 049",
+    "email": "2301010049@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010050",
+    "name": "STUDENT 050",
+    "email": "2301010050@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010051",
+    "name": "STUDENT 051",
+    "email": "2301010051@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010052",
+    "name": "STUDENT 052",
+    "email": "2301010052@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010053",
+    "name": "STUDENT 053",
+    "email": "2301010053@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010054",
+    "name": "STUDENT 054",
+    "email": "2301010054@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010055",
+    "name": "STUDENT 055",
+    "email": "2301010055@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010056",
+    "name": "STUDENT 056",
+    "email": "2301010056@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010057",
+    "name": "STUDENT 057",
+    "email": "2301010057@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010058",
+    "name": "STUDENT 058",
+    "email": "2301010058@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010059",
+    "name": "STUDENT 059",
+    "email": "2301010059@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010060",
+    "name": "STUDENT 060",
+    "email": "2301010060@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010061",
+    "name": "STUDENT 061",
+    "email": "2301010061@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010062",
+    "name": "STUDENT 062",
+    "email": "2301010062@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010063",
+    "name": "STUDENT 063",
+    "email": "2301010063@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010064",
+    "name": "STUDENT 064",
+    "email": "2301010064@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010065",
+    "name": "STUDENT 065",
+    "email": "2301010065@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010066",
+    "name": "STUDENT 066",
+    "email": "2301010066@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010067",
+    "name": "STUDENT 067",
+    "email": "2301010067@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010068",
+    "name": "STUDENT 068",
+    "email": "2301010068@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010069",
+    "name": "STUDENT 069",
+    "email": "2301010069@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010070",
+    "name": "STUDENT 070",
+    "email": "2301010070@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010071",
+    "name": "STUDENT 071",
+    "email": "2301010071@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010072",
+    "name": "STUDENT 072",
+    "email": "2301010072@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010073",
+    "name": "STUDENT 073",
+    "email": "2301010073@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010074",
+    "name": "STUDENT 074",
+    "email": "2301010074@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010075",
+    "name": "STUDENT 075",
+    "email": "2301010075@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010076",
+    "name": "STUDENT 076",
+    "email": "2301010076@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010077",
+    "name": "STUDENT 077",
+    "email": "2301010077@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010078",
+    "name": "STUDENT 078",
+    "email": "2301010078@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010079",
+    "name": "STUDENT 079",
+    "email": "2301010079@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010080",
+    "name": "STUDENT 080",
+    "email": "2301010080@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010081",
+    "name": "STUDENT 081",
+    "email": "2301010081@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010082",
+    "name": "STUDENT 082",
+    "email": "2301010082@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010083",
+    "name": "STUDENT 083",
+    "email": "2301010083@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010084",
+    "name": "STUDENT 084",
+    "email": "2301010084@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010085",
+    "name": "STUDENT 085",
+    "email": "2301010085@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010086",
+    "name": "STUDENT 086",
+    "email": "2301010086@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010087",
+    "name": "STUDENT 087",
+    "email": "2301010087@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010088",
+    "name": "STUDENT 088",
+    "email": "2301010088@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010089",
+    "name": "STUDENT 089",
+    "email": "2301010089@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010090",
+    "name": "STUDENT 090",
+    "email": "2301010090@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010091",
+    "name": "STUDENT 091",
+    "email": "2301010091@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010092",
+    "name": "STUDENT 092",
+    "email": "2301010092@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010093",
+    "name": "STUDENT 093",
+    "email": "2301010093@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010094",
+    "name": "STUDENT 094",
+    "email": "2301010094@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010095",
+    "name": "STUDENT 095",
+    "email": "2301010095@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010096",
+    "name": "STUDENT 096",
+    "email": "2301010096@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010097",
+    "name": "STUDENT 097",
+    "email": "2301010097@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010098",
+    "name": "STUDENT 098",
+    "email": "2301010098@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010099",
+    "name": "STUDENT 099",
+    "email": "2301010099@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010100",
+    "name": "STUDENT 100",
+    "email": "2301010100@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010101",
+    "name": "STUDENT 101",
+    "email": "2301010101@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010102",
+    "name": "STUDENT 102",
+    "email": "2301010102@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010103",
+    "name": "STUDENT 103",
+    "email": "2301010103@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010104",
+    "name": "STUDENT 104",
+    "email": "2301010104@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010105",
+    "name": "STUDENT 105",
+    "email": "2301010105@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010106",
+    "name": "STUDENT 106",
+    "email": "2301010106@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010107",
+    "name": "STUDENT 107",
+    "email": "2301010107@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010108",
+    "name": "STUDENT 108",
+    "email": "2301010108@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010109",
+    "name": "STUDENT 109",
+    "email": "2301010109@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010110",
+    "name": "STUDENT 110",
+    "email": "2301010110@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010111",
+    "name": "STUDENT 111",
+    "email": "2301010111@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010112",
+    "name": "STUDENT 112",
+    "email": "2301010112@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010113",
+    "name": "STUDENT 113",
+    "email": "2301010113@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010114",
+    "name": "STUDENT 114",
+    "email": "2301010114@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010115",
+    "name": "STUDENT 115",
+    "email": "2301010115@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010116",
+    "name": "STUDENT 116",
+    "email": "2301010116@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010117",
+    "name": "STUDENT 117",
+    "email": "2301010117@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010118",
+    "name": "STUDENT 118",
+    "email": "2301010118@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010119",
+    "name": "STUDENT 119",
+    "email": "2301010119@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010120",
+    "name": "STUDENT 120",
+    "email": "2301010120@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010121",
+    "name": "STUDENT 121",
+    "email": "2301010121@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010122",
+    "name": "STUDENT 122",
+    "email": "2301010122@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010123",
+    "name": "STUDENT 123",
+    "email": "2301010123@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010124",
+    "name": "STUDENT 124",
+    "email": "2301010124@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010125",
+    "name": "STUDENT 125",
+    "email": "2301010125@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010126",
+    "name": "STUDENT 126",
+    "email": "2301010126@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010127",
+    "name": "STUDENT 127",
+    "email": "2301010127@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010128",
+    "name": "STUDENT 128",
+    "email": "2301010128@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010129",
+    "name": "STUDENT 129",
+    "email": "2301010129@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010130",
+    "name": "STUDENT 130",
+    "email": "2301010130@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010131",
+    "name": "STUDENT 131",
+    "email": "2301010131@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010132",
+    "name": "STUDENT 132",
+    "email": "2301010132@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010133",
+    "name": "STUDENT 133",
+    "email": "2301010133@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010134",
+    "name": "STUDENT 134",
+    "email": "2301010134@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010135",
+    "name": "STUDENT 135",
+    "email": "2301010135@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010136",
+    "name": "STUDENT 136",
+    "email": "2301010136@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010137",
+    "name": "STUDENT 137",
+    "email": "2301010137@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010138",
+    "name": "STUDENT 138",
+    "email": "2301010138@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010139",
+    "name": "STUDENT 139",
+    "email": "2301010139@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010140",
+    "name": "STUDENT 140",
+    "email": "2301010140@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010141",
+    "name": "STUDENT 141",
+    "email": "2301010141@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010142",
+    "name": "STUDENT 142",
+    "email": "2301010142@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010143",
+    "name": "STUDENT 143",
+    "email": "2301010143@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010144",
+    "name": "STUDENT 144",
+    "email": "2301010144@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010145",
+    "name": "STUDENT 145",
+    "email": "2301010145@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010146",
+    "name": "STUDENT 146",
+    "email": "2301010146@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010147",
+    "name": "STUDENT 147",
+    "email": "2301010147@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010148",
+    "name": "STUDENT 148",
+    "email": "2301010148@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010149",
+    "name": "STUDENT 149",
+    "email": "2301010149@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010150",
+    "name": "STUDENT 150",
+    "email": "2301010150@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010151",
+    "name": "STUDENT 151",
+    "email": "2301010151@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010152",
+    "name": "STUDENT 152",
+    "email": "2301010152@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010153",
+    "name": "STUDENT 153",
+    "email": "2301010153@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010154",
+    "name": "STUDENT 154",
+    "email": "2301010154@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010155",
+    "name": "STUDENT 155",
+    "email": "2301010155@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010156",
+    "name": "STUDENT 156",
+    "email": "2301010156@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010157",
+    "name": "STUDENT 157",
+    "email": "2301010157@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010158",
+    "name": "STUDENT 158",
+    "email": "2301010158@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010159",
+    "name": "STUDENT 159",
+    "email": "2301010159@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010160",
+    "name": "STUDENT 160",
+    "email": "2301010160@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010161",
+    "name": "STUDENT 161",
+    "email": "2301010161@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010162",
+    "name": "STUDENT 162",
+    "email": "2301010162@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010163",
+    "name": "STUDENT 163",
+    "email": "2301010163@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010164",
+    "name": "STUDENT 164",
+    "email": "2301010164@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010165",
+    "name": "STUDENT 165",
+    "email": "2301010165@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010166",
+    "name": "STUDENT 166",
+    "email": "2301010166@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010167",
+    "name": "STUDENT 167",
+    "email": "2301010167@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010168",
+    "name": "STUDENT 168",
+    "email": "2301010168@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010169",
+    "name": "STUDENT 169",
+    "email": "2301010169@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010170",
+    "name": "STUDENT 170",
+    "email": "2301010170@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010171",
+    "name": "STUDENT 171",
+    "email": "2301010171@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010172",
+    "name": "STUDENT 172",
+    "email": "2301010172@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010173",
+    "name": "STUDENT 173",
+    "email": "2301010173@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010174",
+    "name": "STUDENT 174",
+    "email": "2301010174@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010175",
+    "name": "STUDENT 175",
+    "email": "2301010175@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010176",
+    "name": "STUDENT 176",
+    "email": "2301010176@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010177",
+    "name": "STUDENT 177",
+    "email": "2301010177@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010178",
+    "name": "STUDENT 178",
+    "email": "2301010178@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010179",
+    "name": "STUDENT 179",
+    "email": "2301010179@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010180",
+    "name": "STUDENT 180",
+    "email": "2301010180@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010181",
+    "name": "STUDENT 181",
+    "email": "2301010181@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010182",
+    "name": "STUDENT 182",
+    "email": "2301010182@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010183",
+    "name": "STUDENT 183",
+    "email": "2301010183@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010184",
+    "name": "STUDENT 184",
+    "email": "2301010184@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010185",
+    "name": "STUDENT 185",
+    "email": "2301010185@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010186",
+    "name": "STUDENT 186",
+    "email": "2301010186@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010187",
+    "name": "STUDENT 187",
+    "email": "2301010187@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010188",
+    "name": "STUDENT 188",
+    "email": "2301010188@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010189",
+    "name": "STUDENT 189",
+    "email": "2301010189@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010190",
+    "name": "STUDENT 190",
+    "email": "2301010190@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010191",
+    "name": "STUDENT 191",
+    "email": "2301010191@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010192",
+    "name": "STUDENT 192",
+    "email": "2301010192@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010193",
+    "name": "STUDENT 193",
+    "email": "2301010193@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010194",
+    "name": "STUDENT 194",
+    "email": "2301010194@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010195",
+    "name": "STUDENT 195",
+    "email": "2301010195@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010196",
+    "name": "STUDENT 196",
+    "email": "2301010196@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010197",
+    "name": "STUDENT 197",
+    "email": "2301010197@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010198",
+    "name": "STUDENT 198",
+    "email": "2301010198@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010199",
+    "name": "STUDENT 199",
+    "email": "2301010199@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010200",
+    "name": "STUDENT 200",
+    "email": "2301010200@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010201",
+    "name": "STUDENT 201",
+    "email": "2301010201@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010202",
+    "name": "STUDENT 202",
+    "email": "2301010202@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010203",
+    "name": "STUDENT 203",
+    "email": "2301010203@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010204",
+    "name": "STUDENT 204",
+    "email": "2301010204@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010205",
+    "name": "STUDENT 205",
+    "email": "2301010205@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010206",
+    "name": "STUDENT 206",
+    "email": "2301010206@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010207",
+    "name": "STUDENT 207",
+    "email": "2301010207@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010208",
+    "name": "STUDENT 208",
+    "email": "2301010208@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010209",
+    "name": "STUDENT 209",
+    "email": "2301010209@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010210",
+    "name": "STUDENT 210",
+    "email": "2301010210@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010211",
+    "name": "STUDENT 211",
+    "email": "2301010211@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010212",
+    "name": "STUDENT 212",
+    "email": "2301010212@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010213",
+    "name": "STUDENT 213",
+    "email": "2301010213@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010214",
+    "name": "STUDENT 214",
+    "email": "2301010214@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010215",
+    "name": "STUDENT 215",
+    "email": "2301010215@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010216",
+    "name": "STUDENT 216",
+    "email": "2301010216@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010217",
+    "name": "STUDENT 217",
+    "email": "2301010217@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010218",
+    "name": "STUDENT 218",
+    "email": "2301010218@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010219",
+    "name": "STUDENT 219",
+    "email": "2301010219@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010220",
+    "name": "STUDENT 220",
+    "email": "2301010220@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010221",
+    "name": "STUDENT 221",
+    "email": "2301010221@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010222",
+    "name": "STUDENT 222",
+    "email": "2301010222@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010223",
+    "name": "STUDENT 223",
+    "email": "2301010223@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010224",
+    "name": "STUDENT 224",
+    "email": "2301010224@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010225",
+    "name": "STUDENT 225",
+    "email": "2301010225@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010226",
+    "name": "STUDENT 226",
+    "email": "2301010226@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010227",
+    "name": "STUDENT 227",
+    "email": "2301010227@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010228",
+    "name": "STUDENT 228",
+    "email": "2301010228@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010229",
+    "name": "STUDENT 229",
+    "email": "2301010229@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010230",
+    "name": "STUDENT 230",
+    "email": "2301010230@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010231",
+    "name": "STUDENT 231",
+    "email": "2301010231@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010232",
+    "name": "STUDENT 232",
+    "email": "2301010232@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010233",
+    "name": "STUDENT 233",
+    "email": "2301010233@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010234",
+    "name": "STUDENT 234",
+    "email": "2301010234@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010235",
+    "name": "STUDENT 235",
+    "email": "2301010235@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010236",
+    "name": "STUDENT 236",
+    "email": "2301010236@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010237",
+    "name": "STUDENT 237",
+    "email": "2301010237@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010238",
+    "name": "STUDENT 238",
+    "email": "2301010238@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010239",
+    "name": "STUDENT 239",
+    "email": "2301010239@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010240",
+    "name": "STUDENT 240",
+    "email": "2301010240@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010241",
+    "name": "STUDENT 241",
+    "email": "2301010241@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010242",
+    "name": "STUDENT 242",
+    "email": "2301010242@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010243",
+    "name": "STUDENT 243",
+    "email": "2301010243@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010244",
+    "name": "STUDENT 244",
+    "email": "2301010244@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010245",
+    "name": "STUDENT 245",
+    "email": "2301010245@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010246",
+    "name": "STUDENT 246",
+    "email": "2301010246@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010247",
+    "name": "STUDENT 247",
+    "email": "2301010247@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010248",
+    "name": "STUDENT 248",
+    "email": "2301010248@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010249",
+    "name": "STUDENT 249",
+    "email": "2301010249@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010250",
+    "name": "STUDENT 250",
+    "email": "2301010250@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010251",
+    "name": "STUDENT 251",
+    "email": "2301010251@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010252",
+    "name": "STUDENT 252",
+    "email": "2301010252@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010253",
+    "name": "STUDENT 253",
+    "email": "2301010253@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010254",
+    "name": "STUDENT 254",
+    "email": "2301010254@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010255",
+    "name": "STUDENT 255",
+    "email": "2301010255@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010256",
+    "name": "STUDENT 256",
+    "email": "2301010256@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010257",
+    "name": "STUDENT 257",
+    "email": "2301010257@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010258",
+    "name": "STUDENT 258",
+    "email": "2301010258@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010259",
+    "name": "STUDENT 259",
+    "email": "2301010259@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010260",
+    "name": "STUDENT 260",
+    "email": "2301010260@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010261",
+    "name": "STUDENT 261",
+    "email": "2301010261@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010262",
+    "name": "STUDENT 262",
+    "email": "2301010262@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010263",
+    "name": "STUDENT 263",
+    "email": "2301010263@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010264",
+    "name": "STUDENT 264",
+    "email": "2301010264@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010265",
+    "name": "STUDENT 265",
+    "email": "2301010265@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010266",
+    "name": "STUDENT 266",
+    "email": "2301010266@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010267",
+    "name": "STUDENT 267",
+    "email": "2301010267@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010268",
+    "name": "STUDENT 268",
+    "email": "2301010268@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010269",
+    "name": "STUDENT 269",
+    "email": "2301010269@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010270",
+    "name": "STUDENT 270",
+    "email": "2301010270@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010271",
+    "name": "STUDENT 271",
+    "email": "2301010271@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010272",
+    "name": "STUDENT 272",
+    "email": "2301010272@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010273",
+    "name": "STUDENT 273",
+    "email": "2301010273@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010274",
+    "name": "STUDENT 274",
+    "email": "2301010274@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010275",
+    "name": "STUDENT 275",
+    "email": "2301010275@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010276",
+    "name": "STUDENT 276",
+    "email": "2301010276@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010277",
+    "name": "STUDENT 277",
+    "email": "2301010277@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010278",
+    "name": "STUDENT 278",
+    "email": "2301010278@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010279",
+    "name": "STUDENT 279",
+    "email": "2301010279@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010280",
+    "name": "STUDENT 280",
+    "email": "2301010280@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010281",
+    "name": "STUDENT 281",
+    "email": "2301010281@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010282",
+    "name": "STUDENT 282",
+    "email": "2301010282@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010283",
+    "name": "STUDENT 283",
+    "email": "2301010283@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010284",
+    "name": "STUDENT 284",
+    "email": "2301010284@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010285",
+    "name": "STUDENT 285",
+    "email": "2301010285@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010286",
+    "name": "STUDENT 286",
+    "email": "2301010286@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010287",
+    "name": "STUDENT 287",
+    "email": "2301010287@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010288",
+    "name": "STUDENT 288",
+    "email": "2301010288@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010289",
+    "name": "STUDENT 289",
+    "email": "2301010289@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010290",
+    "name": "STUDENT 290",
+    "email": "2301010290@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010291",
+    "name": "STUDENT 291",
+    "email": "2301010291@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010292",
+    "name": "STUDENT 292",
+    "email": "2301010292@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010293",
+    "name": "STUDENT 293",
+    "email": "2301010293@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010294",
+    "name": "STUDENT 294",
+    "email": "2301010294@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010295",
+    "name": "STUDENT 295",
+    "email": "2301010295@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010296",
+    "name": "STUDENT 296",
+    "email": "2301010296@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010297",
+    "name": "STUDENT 297",
+    "email": "2301010297@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010298",
+    "name": "STUDENT 298",
+    "email": "2301010298@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010299",
+    "name": "STUDENT 299",
+    "email": "2301010299@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  },
+  {
+    "rollno": "2301010300",
+    "name": "STUDENT 300",
+    "email": "2301010300@krmu.edu.in",
+    "section": "SectionA",
+    "technicalAssessment": {
+      "mock": 0,
+      "oops": 0,
+      "dbms": 0,
+      "problemSolving": 0,
+      "os": 0
+    },
+    "aptitudeAssessment": {
+      "aptitudeTest": 0,
+      "cocubesAmcat": 0
+    },
+    "totalMarks": 0
+  }
+]
