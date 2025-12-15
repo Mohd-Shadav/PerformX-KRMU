@@ -11,7 +11,7 @@ export default function StudentPage() {
      const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    // Handler function
+    
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
     };
