@@ -17,6 +17,19 @@ const studentSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    role:{
+        type:String,
+         required:true
+    },
+    specialization:{
+        type:String,
+        required:true
+    },
+    program:{
+        type:String,
+        required:true
+    },
+
     technicalAssessment:{
         mock:{
             type:Number,
@@ -84,6 +97,9 @@ const studentSchema = mongoose.Schema({
         min:0,
         max:200,
         default:0
+    },
+    password:{
+        type:String
     }
 
 })

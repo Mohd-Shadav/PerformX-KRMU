@@ -22,6 +22,9 @@ const trainerSchema = mongoose.Schema({
         type:String,
         required:true
     },
+    department:{
+        type:String
+    },
     designation:{
          type:String,
         required:true
@@ -29,6 +32,9 @@ const trainerSchema = mongoose.Schema({
     DOJ:{
         type:Date,
         required:true
+    },
+    password:{
+        type:String
     }
 })
 

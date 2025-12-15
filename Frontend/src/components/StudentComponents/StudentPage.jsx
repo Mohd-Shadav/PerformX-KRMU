@@ -4,11 +4,34 @@ import ProfilePage from '../Profile/ProfilePage';
 import AllStudentsMarksPage from '../AllStudentsMarks/AllStudentsMarksPage';
 import StudentProfile from './StudentProfile';
 import StudentLeaderboard from './StudentLeaderboard';
+import axios from 'axios';
 
-export default function StudentPage() {
+export default function StudentPage({setRole}) {
     const [activeSection, setActiveSection] = useState('profile');
     const [sidebarOpen, setSidebarOpen] = useState(false);
      const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+
+
+     const logout = async ()=>{
+        try{
+
+            let res = await axios.get('http://localhost:5000/api/loggedout');
+           
+            if(res.status===200)
+            {
+                localStorage.setItem("USER","");
+                setRole(null)
+
+            }else{
+                alert("Something Went Wrong")
+            }
+
+        }catch(err){
+            alert("Something Went Wrong")
+        }
+    }
+
 
   useEffect(() => {
     
@@ -113,7 +136,7 @@ export default function StudentPage() {
 
                 {/* Sidebar Footer */}
                 <div className="border-t border-gray-200 p-4">
-                    <button className="w-full flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-200">
+                    <button className="w-full flex items-center gap-3 px-4 py-3 text-gray-700 hover:bg-gray-50 rounded-lg transition-colors duration-200 cursor-pointer" onClick={logout}>
                         <LogOut size={20} />
                         <span className="font-medium text-sm">Logout</span>
                     </button>

@@ -1,7 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './Login.module.css';
+import axios from 'axios';
 
-const Login = () => {
+const Login = ({setRole}) => {
+
+    const [formData,setFormData] = useState({
+        email:'',
+        password:'',
+        role:'student'
+
+    })
+
+    const handleChange = (e)=>{
+        const {name,value} = e.target;
+
+        setFormData(prev=>({...prev,[name]:value}))
+
+    }
+
+    const loginData = async(e)=>{
+        e.preventDefault();
+       
+        let res = await axios.post('http://localhost:5000/api/auth',formData,{
+            headers:{
+                "Content-Type":"application/json"
+            }
+        })
+
+        if(res.status===200)
+        {
+            localStorage.setItem("USER",JSON.stringify(res.data))
+            setRole(res.data.role)
+        }else{
+             localStorage.setItem("USER","")
+        }
+
+
+        
+    }
+
+
     return (
         <div className="flex flex-col md:flex-row h-screen">
             {/* Left Side */}
@@ -11,13 +49,13 @@ const Login = () => {
                 <form className="w-full max-w-sm">
                     <div className="mb-4">
                         <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
-                        <input type="email" id="email" className="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="you@example.com" aria-label="Email" required />
+                        <input type="email" id="email" name='email' value={formData.email} className="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="you@example.com" aria-label="Email" required  onChange={handleChange}/>
                     </div>
                     <div className="mb-6">
                         <label htmlFor="password" className="block text-sm font-medium text-gray-700">Password</label>
-                        <input type="password" id="password" className="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="••••••••" aria-label="Password" required />
+                        <input type="password" id="password" name='password' value={formData.password} className="mt-1 block w-full p-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500" placeholder="••••••••" aria-label="Password" required onChange={handleChange} />
                     </div>
-                    <button type="submit" className="w-full bg-indigo-600 text-white font-semibold py-2 rounded-lg shadow-sm hover:bg-indigo-700 transition duration-200 cursor-pointer">Login</button>
+                    <button type="submit" className="w-full bg-indigo-600 text-white font-semibold py-2 rounded-lg shadow-sm hover:bg-indigo-700 transition duration-200 cursor-pointer" onClick={loginData}>Login</button>
                 </form>
             </div>
 
