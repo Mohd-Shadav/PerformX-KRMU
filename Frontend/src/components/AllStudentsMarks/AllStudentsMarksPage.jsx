@@ -1,100 +1,103 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState,useEffect, useMemo } from 'react';
 import { Search } from 'lucide-react';
+import axios from 'axios'
+import Loader from '../Loader'
+import NoResultFound from '../NoResultFound';
 
 /* ---------------- MOCK DATA ---------------- */
-const MOCK_STUDENTS = [
-  {
-    id: 1,
-    rollNo: 'CS001',
-    name: 'Aarav Sharma',
-    section: 'A',
-    email: 'aarav.sharma@edu.com',
+// const MOCK_STUDENTS = [
+//   {
+//     id: 1,
+//     rollNo: 'CS001',
+//     name: 'Aarav Sharma',
+//     section: 'A',
+//     email: 'aarav.sharma@edu.com',
 
-    technical: {
-      mock: 25,
-      oops: 12,
-      dbms: 13,
-      problemSolving: 20,
-      os: 10,
-    },
+//     technical: {
+//       mock: 25,
+//       oops: 12,
+//       dbms: 13,
+//       problemSolving: 20,
+//       os: 10,
+//     },
 
-    aptitude: {
-      aptitudeTest: 40,
-      cocubes: 42,
-    },
+//     aptitude: {
+//       aptitudeTest: 40,
+//       cocubes: 42,
+//     },
 
-    totalMarks: 162,
-  },
+//     totalMarks: 162,
+//   },
 
-  {
-    id: 2,
-    rollNo: 'CS002',
-    name: 'Priya Verma',
-    section: 'B',
-    email: 'priya.verma@edu.com',
+//   {
+//     id: 2,
+//     rollNo: 'CS002',
+//     name: 'Priya Verma',
+//     section: 'B',
+//     email: 'priya.verma@edu.com',
 
-    technical: {
-      mock: 28,
-      oops: 14,
-      dbms: 12,
-      problemSolving: 22,
-      os: 11,
-    },
+//     technical: {
+//       mock: 28,
+//       oops: 14,
+//       dbms: 12,
+//       problemSolving: 22,
+//       os: 11,
+//     },
 
-    aptitude: {
-      aptitudeTest: 45,
-      cocubes: 46,
-    },
+//     aptitude: {
+//       aptitudeTest: 45,
+//       cocubes: 46,
+//     },
 
-    totalMarks: 178,
-  },
+//     totalMarks: 178,
+//   },
 
-  {
-    id: 3,
-    rollNo: 'ME001',
-    name: 'Zara Khan',
-    section: 'A',
-    email: 'zara.khan@edu.com',
+//   {
+//     id: 3,
+//     rollNo: 'ME001',
+//     name: 'Zara Khan',
+//     section: 'A',
+//     email: 'zara.khan@edu.com',
 
-    technical: {
-      mock: 20,
-      oops: 10,
-      dbms: 11,
-      problemSolving: 18,
-      os: 9,
-    },
+//     technical: {
+//       mock: 20,
+//       oops: 10,
+//       dbms: 11,
+//       problemSolving: 18,
+//       os: 9,
+//     },
 
-    aptitude: {
-      aptitudeTest: 35,
-      cocubes: 38,
-    },
+//     aptitude: {
+//       aptitudeTest: 35,
+//       cocubes: 38,
+//     },
 
-    totalMarks: 141,
-  },
+//     totalMarks: 141,
+//   },
 
-  {
-    id: 4,
-    rollNo: 'CS004',
-    name: 'Divya Nair',
-    section: 'C',
-    email: 'divya.nair@edu.com',
+//   {
+//     id: 4,
+//     rollNo: 'CS004',
+//     name: 'Divya Nair',
+//     section: 'C',
+//     email: 'divya.nair@edu.com',
 
-    technical: {
-      mock: 27,
-      oops: 13,
-      dbms: 14,
-      problemSolving: 21,
-      os: 12,
-    },
+//     technical: {
+//       mock: 27,
+//       oops: 13,
+//       dbms: 14,
+//       problemSolving: 21,
+//       os: 12,
+//     },
 
-    aptitude: {
-      aptitudeTest: 48,
-      cocubes: 47,
-    },
+//     aptitude: {
+//       aptitudeTest: 48,
+//       cocubes: 47,
+//     },
 
-    totalMarks: 182,
-  },
-];
+//     totalMarks: 182,
+//   },
+// ];
 
 
 /* ---------------- COMPONENT ---------------- */
@@ -103,13 +106,16 @@ export default function AllStudentsMarksPage() {
   const [selectedSection, setSelectedSection] = useState('');
   const [selectedDepartment, setSelectedDepartment] = useState('');
   const [selectedYear, setSelectedYear] = useState('');
+  const [MOCK_STUDENTS,setMockStudent] = useState([]);
 
   /* Filters */
   const sections = [...new Set(MOCK_STUDENTS.map(s => s.section))];
-  const departments = [...new Set(MOCK_STUDENTS.map(s => s.department))];
-  const years = [...new Set(MOCK_STUDENTS.map(s => s.year))];
+  // const departments = [...new Set(MOCK_STUDENTS.map(s => s.department))];
+  // const years = [...new Set(MOCK_STUDENTS.map(s => s.year))];
 
   const filteredStudents = useMemo(() => {
+
+
     return MOCK_STUDENTS.filter(student => {
       const searchMatch =
         student.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -117,12 +123,45 @@ export default function AllStudentsMarksPage() {
 
       return (
         searchMatch &&
-        (!selectedSection || student.section === selectedSection) &&
-        (!selectedDepartment || student.department === selectedDepartment) &&
-        (!selectedYear || student.year === selectedYear)
+        (!selectedSection || student.section === selectedSection) 
+      
       );
     });
-  }, [searchQuery, selectedSection, selectedDepartment, selectedYear]);
+  }, [MOCK_STUDENTS,searchQuery, selectedSection]);
+
+
+  const fetchAlldata = async () => {
+    const res = await axios.get('http://localhost:5000/student/allstudentdata');
+const formattedData = res.data.map(student => ({
+  id: student._id,
+  rollNo: student.rollno,
+  name: student.name,
+  section: student.section,
+  email: student.email,
+  technicalAssessment: {
+    mock: student?.technicalAssessment?.mock,
+    dbms: student?.technicalAssessment?.dbms,
+    oops: student?.technicalAssessment?.oops,
+    problemSolving: student?.technicalAssessment?.problemSolving,
+    os: student?.technicalAssessment?.os,
+  },
+  aptitudeAssessment: {
+    aptitudeTest: student?.aptitudeAssessment?.aptitudeTest,
+    cocubes: student?.aptitudeAssessment?.cocubesAmcat
+  },
+  totalMarks: student.totalMarks
+}));
+
+
+  setMockStudent(formattedData);
+  
+ 
+  };
+
+useEffect(() => {
+  
+  fetchAlldata();
+},[]);
 
   return (
     <div className="bg-white  shadow-sm">
@@ -206,7 +245,7 @@ export default function AllStudentsMarksPage() {
         </div>
 
         <p className="mt-4 text-sm text-gray-600">
-          Showing <span className="font-semibold">{filteredStudents.length}</span>{' '}
+          Showing <span className="font-semibold">{filteredStudents?.length}</span>{' '}
           students
         </p>
       </div>
@@ -216,12 +255,12 @@ export default function AllStudentsMarksPage() {
         <table className="w-full">
           <thead className="bg-gray-100 border-b">
             <tr>
-              {['Roll No', 'Name', 'Section', 'Email','Technical Assesment','Aptitude Assessment', 'Total Marks'].map(
+              {['Roll No', 'Name', 'Section', 'Email','Technical Assessment','Aptitude Assessment', 'Total Marks'].map(
                 h => (
                   <th
                     key={h}
-                    colSpan={h==='Technical Assesment' ? 5 : h==='Aptitude Assessment' ? 2 : 1}
-                    className={`px-6 py-3 text-xs font-semibold text-gray-700 border-r border-gray-300 uppercase ${h==='Technical Assesment'||h==='Aptitude Assessment' ? 'text-center' : 'text-left'}`}
+                    colSpan={h==='Technical Assessment' ? 5 : h==='Aptitude Assessment' ? 2 : 1}
+                    className={`px-6 py-3 text-xs font-semibold text-gray-700 border-r border-gray-300 uppercase ${h==='Technical Assessment'||h==='Aptitude Assessment' ? 'text-center' : 'text-left'}`}
                   >
                     {h}
                   </th>
@@ -241,25 +280,55 @@ export default function AllStudentsMarksPage() {
               )}
             </tr>
           </thead>
-          <tbody className="divide-y">
-            {filteredStudents.map(student => (
+            <tbody className="divide-y">
+          
+{MOCK_STUDENTS.length<=0 ? (
+  <tr>
+
+<td colSpan={12}>
+      <div className="flex items-center justify-center w-full">
+
+
+<Loader/>
+  </div>
+
+</td>
+  </tr>
+  
+
+
+            ):filteredStudents.length<=0 ?(
+                <tr>
+
+<td colSpan={12}>
+      <div className="flex items-center justify-center w-full">
+
+
+<NoResultFound/>
+  </div>
+
+</td>
+  </tr>
+            ):
+            (filteredStudents.map(student => (
+            
               <tr key={student.id} className="hover:bg-indigo-50">
                 <td className="px-6 py-3 font-medium text-indigo-600">
                   {student.rollNo}
                 </td>
-                <td className="px-6 py-3">{student.name}</td>
-                <td className="px-6 py-3">{student.section}</td>
-                <td className="px-6 py-3">{student.email}</td>
-                <td className="px-6 py-3">{student.technical.mock}</td>
-                <td className="px-6 py-3">{student.technical.oops}</td>
-                <td className="px-6 py-3">{student.technical.dbms}</td>
-                 <td className="px-6 py-3">{student.technical.problemSolving}</td>
-               <td className="px-6 py-3">{student.technical.os}</td>
-                <td className="px-6 py-3">{student.aptitude.aptitudeTest}</td>
-                 <td className="px-6 py-3">{student.aptitude.cocubes}</td>
-                 <td className="px-6 py-3">{student.totalMarks}</td>
+                <td className="px-6 py-3">{student?.name}</td>
+                <td className="px-6 py-3">{student?.section}</td>
+                <td className="px-6 py-3">{student?.email}</td>
+                <td className="px-6 py-3">{student?.technicalAssessment.mock}</td>
+                <td className="px-6 py-3">{student?.technicalAssessment.oops}</td>
+                <td className="px-6 py-3">{student?.technicalAssessment.dbms}</td>
+                 <td className="px-6 py-3">{student?.technicalAssessment.problemSolving}</td>
+               <td className="px-6 py-3">{student?.technicalAssessment.os}</td>
+                <td className="px-6 py-3">{student?.aptitudeAssessment.aptitudeTest}</td>
+                 <td className="px-6 py-3">{student?.aptitudeAssessment.cocubes}</td>
+                 <td className="px-6 py-3">{student?.totalMarks}</td>
               </tr>
-            ))}
+            )))}
           </tbody>
         </table>
       </div>
