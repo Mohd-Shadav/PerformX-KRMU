@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useLayoutEffect, useState } from 'react'
 import Login from './components/Auth/Login.jsx'
 import TrainersPage from './components/Trainers/TrainersPage.jsx'
 import StudentPage from './components/StudentComponents/StudentPage.jsx'
+
 
 
 function App() {
@@ -10,7 +11,7 @@ function App() {
  const [role, setRole] = useState(null)
 
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const data = localStorage.getItem("USER")
     if (data) {
       const parsed = JSON.parse(data)
@@ -22,7 +23,7 @@ function App() {
     <div>
    
 
-    {role==='trainer'?(
+    {role==='Technical Trainer' || role === 'Aptitude Trainer'?(
       <TrainersPage setRole={setRole}/>
     ):role==='student' ?(
       <StudentPage setRole={setRole}/>
@@ -32,9 +33,10 @@ function App() {
 
     }
 
+   
 
-    {/* <TrainersPage/> */}
-    {/* <StudentPage/> */}
+
+ 
    
 
     

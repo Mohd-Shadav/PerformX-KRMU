@@ -1,10 +1,9 @@
 role,name,employeeID,email,phone,department,designation,DOJ
-trainer,Shaquib Hasan,9470,shaquib.hasan@krmangalam.edu.in,9319410904,SOET,Technical Trainer,10-06-2025
-trainer,Devendra Kumar Gupta,9435,devendra.kumar@krmangalam.edu.in,9369238419,SOET,Technical Trainer,7/28/2025
-trainer,Vishal kumar,9475,vishal.kumar@krmangalam.edu.in,8407073104,SOET,DSA Trainer,10/14/2025
-trainer,Vibha Kushwaha,9474,vibha@krmsngalam.edu.in,9718751929,SOET,Technical Trainer,10/14/2025
-trainer,Nandan Kumar Mishra,9427,nandankumar.mishra@krmangalam.edu.in,9534694015,SOET,Technical trainer,7/14/2025
-trainer,Ashutosh,9424,Ashutosh.dubey@krmangalam.edu.in,9202577684,SOET,Technical trainer,6/23/2025
-trainer,Love Porwal,9477,love.porwal@krmangalam.edu.in,8769350815,SOET,Technical Trainer,10/27/2025
-trainer,Akash Tiwari,9460,akash.tiwari@krmangalam.edu.in,8957153240,SOET,Technical Trainer,9/17/2025
-,,,,,,,
+Technical Trainer,Shaquib Hasan,9470,shaquib.hasan@krmangalam.edu.in,9319410904,SOET,Technical Trainer,10/6/2025
+Technical Trainer,Devendra Kumar Gupta,9435,devendra.kumar@krmangalam.edu.in,9369238419,SOET,Technical Trainer,7/28/2025
+Technical Trainer,Vishal kumar,9475,vishal.kumar@krmangalam.edu.in,8407073104,SOET,DSA Trainer,10/14/2025
+Technical Trainer,Vibha Kushwaha,9474,vibha@krmsngalam.edu.in,9718751929,SOET,Technical Trainer,10/14/2025
+Technical Trainer,Nandan Kumar Mishra,9427,nandankumar.mishra@krmangalam.edu.in,9534694015,SOET,Technical trainer,7/14/2025
+Technical Trainer,Ashutosh,9424,Ashutosh.dubey@krmangalam.edu.in,9202577684,SOET,Technical trainer,6/23/2025
+Technical Trainer,Love Porwal,9477,love.porwal@krmangalam.edu.in,8769350815,SOET,Technical Trainer,10/27/2025
+Technical Trainer,Akash Tiwari,9460,akash.tiwari@krmangalam.edu.in,8957153240,SOET,Technical Trainer,9/17/2025

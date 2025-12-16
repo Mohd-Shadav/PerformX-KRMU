@@ -5,6 +5,7 @@ const studentAllData = async(req,res)=>{
 
     try{
         const result = await studentSchema.find();
+        
        
         res.status(200).send(result)
     }catch(err){
