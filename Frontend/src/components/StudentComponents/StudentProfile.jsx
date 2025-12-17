@@ -1,18 +1,33 @@
-import React from 'react';
-import { Mail, Phone, Calendar, BookOpen, Edit2 } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { Mail, Phone, Calendar, BookOpen, Edit2, User, GraduationCap, Hash, School } from 'lucide-react';
+import axios from 'axios';
 
 export default function StudentProfile() {
-    // Mock trainer profile data
-    const trainerData = {
-        name: 'Johnson',
-        RollNo: 'TR-2024-001',
-        department: 'Training & Development',
-        Section: 'Section A',
-        email: 'alex.johnson@company.com',
-        phone: '+1 (555) 123-4567',
-        // joiningDate: 'January 15, 2022',
-        // qualifications: 'MBA, Certified Corporate Trainer, ITIL Certified',
-    };
+  
+
+    const [studentData,setstudentData] = useState([]);
+    const userType = JSON.parse(localStorage.getItem("USER"));
+
+    const fetchStudentData = async(req,res)=>{
+
+        try{
+            let res = await axios.get(`http://localhost:5000/student/getstudent/${userType._id}`)
+
+            if(res.status===200)
+            {
+                setstudentData(res.data);
+            }
+
+        }catch(err){
+            alert("Something Went Wrong...");
+        }
+    }
+
+    useEffect(()=>{
+        fetchStudentData();
+
+    },[])
+
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 py-8 px-4 sm:px-6 lg:px-8">
@@ -40,8 +55,8 @@ export default function StudentProfile() {
                             </div>
 
                             <div className="flex-1">
-                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{trainerData.name}</h2>
-                                <p className="text-indigo-600 font-semibold text-lg">{trainerData.Section}</p>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{studentData.name}</h2>
+                                <p className="text-indigo-600 font-semibold text-lg">{studentData.section}</p>
                             </div>
 
                             {/* Edit Button */}
@@ -58,18 +73,37 @@ export default function StudentProfile() {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                             {/* Employee ID */}
                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
-                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block">
+                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block flex items-center gap-2 mb-2">
+                                    <Hash size={16} className="text-indigo-600" />
                                     Roll No.
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.RollNo}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData.rollno}</p>
                             </div>
 
                             {/* Department */}
                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
-                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block">
-                                    Department
+                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block flex items-center gap-2 mb-2">
+                                    <School size={16} className="text-indigo-600" />
+                                   Program
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.department}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData.program}</p>
+                            </div>
+                                {/* Email */}
+                            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
+                                    <GraduationCap size={16} className="text-indigo-600" />
+                                    Specialization
+                                </label>
+                                <p className="text-gray-900 text-lg font-medium break-all">{studentData.specialization ? studentData.specialization.toUpperCase():studentData.specialization}</p>
+                            </div>
+
+                            {/* Phone */}
+                            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
+                                <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
+                                    <User size={16} className="text-indigo-600" />
+                                    Role
+                                </label>
+                                <p className="text-gray-900 text-lg font-medium">{studentData.role ? studentData.role.toUpperCase():studentData.role}</p>
                             </div>
 
                             {/* Email */}
@@ -78,7 +112,7 @@ export default function StudentProfile() {
                                     <Mail size={16} className="text-indigo-600" />
                                     Email Address
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium break-all">{trainerData.email}</p>
+                                <p className="text-gray-900 text-lg font-medium break-all">{studentData.email}</p>
                             </div>
 
                             {/* Phone */}
@@ -87,7 +121,7 @@ export default function StudentProfile() {
                                     <Phone size={16} className="text-indigo-600" />
                                     Phone Number
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.phone}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData.phone}</p>
                             </div>
 
                             {/* Joining Date */}
@@ -96,7 +130,7 @@ export default function StudentProfile() {
                                     <Calendar size={16} className="text-indigo-600" />
                                     Joining Date
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.joiningDate}</p> */}
+                                <p className="text-gray-900 text-lg font-medium">{studentData.joiningDate}</p> */}
                             {/* </div> */}
 
                             {/* Qualifications */}
@@ -105,7 +139,7 @@ export default function StudentProfile() {
                                     <BookOpen size={16} className="text-indigo-600" />
                                     Qualifications
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.qualifications}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData.qualifications}</p>
                             </div> */}
                         </div>
                     </div>
