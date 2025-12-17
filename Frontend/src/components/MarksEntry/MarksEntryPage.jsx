@@ -68,7 +68,9 @@ const MarksEntryPage = () => {
   const [mockStudents,setMockStudents] = useState([])
   const [students, setStudents] = useState(mockStudents);
   const [selectedSection, setSelectedSection] = useState('All');
-  const [userRole] = useState('technical'); // or 'aptitude'
+  const userType = JSON.parse(localStorage.getItem("USER"))
+  
+  const [userRole] = useState(userType.role); 
   const [saveStatus, setSaveStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
@@ -100,30 +102,17 @@ const MarksEntryPage = () => {
 
     fetchStudentData()
 
-  },[])
+  },[saveStatus])
 
-  // Calculate totals
-  const calculateTechnicalTotal = (student) => {
-    return (
-      (student.mockInterview || 0) +
-      (student.oops || 0) +
-      (student.dbms || 0) +
-      (student.problemSolving || 0) +
-      (student.os || 0)
-    );
-  };
 
-  const calculateAptitudeTotal = (student) => {
-    return (student.aptitudeTest || 0) + (student.cocubes || 0);
-  };
 
-  const calculateGrandTotal = (student) => {
-    return calculateTechnicalTotal(student) + calculateAptitudeTotal(student);
-  };
+
+
+
 
   // Handle input change
 const handleInputChange = (e, studentId) => {
-  console.log(studentId,"line 126")
+  
   const { name, value } = e.target;
 
   setStudents((prev) =>
@@ -169,7 +158,7 @@ const handleInputChange = (e, studentId) => {
     ];
     const aptitudeFields = ['aptitudeTest', 'cocubes'];
 
-    if (userRole === 'technical') {
+    if (userRole === 'Technical Trainer') {
       return technicalFields.includes(field);
     } else {
       return aptitudeFields.includes(field);
@@ -181,7 +170,7 @@ const handleInputChange = (e, studentId) => {
     setIsLoading(true);
     setSaveStatus(null);
 
-    console.log(students)
+    
 
     // Prepare payload
     // const payload = {
@@ -216,7 +205,7 @@ const handleInputChange = (e, studentId) => {
         }
       })
 
-      console.log(res)
+    
 
     }catch(err){
 
@@ -503,7 +492,7 @@ const handleInputChange = (e, studentId) => {
 
                   {/* Total */}
                   <td className="border-l border-gray-300 px-4 py-3 text-center font-semibold text-indigo-600">
-                    {calculateGrandTotal(student)}
+                    {student.totalMarks}
                   </td>
                 </tr>
               ))}

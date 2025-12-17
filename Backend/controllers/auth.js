@@ -67,7 +67,6 @@ const logOut = async(req,res)=>{
     try{
 
 
-        console.log("hello")
         
 
         res.cookie('token',"")

@@ -1,18 +1,41 @@
 import React from 'react';
 import { Mail, Phone, Calendar, BookOpen, Edit2 } from 'lucide-react';
+import axios from 'axios';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 export default function ProfilePage() {
     // Mock trainer profile data
-    const trainerData = {
-        name: 'Alex Johnson',
-        employeeId: 'TR-2024-001',
-        department: 'Training & Development',
-        designation: 'Senior Trainer',
-        email: 'alex.johnson@company.com',
-        phone: '+1 (555) 123-4567',
-        joiningDate: 'January 15, 2022',
-        qualifications: 'MBA, Certified Corporate Trainer, ITIL Certified',
-    };
+    const [trainerData,setTrainerData] = useState([])
+    const userType = JSON.parse(localStorage.getItem("USER"))
+
+    const fetchTrainerData = async ()=>{
+        try{
+          
+            let res = await axios.get(`http://localhost:5000/trainer/gettrainerdata/${userType._id}`);
+
+            
+            if(res.status===200)
+            {
+                setTrainerData(res.data)
+        
+            }
+
+
+
+        }catch(err){
+            alert("Something Went Wrong...")
+
+        }
+    }
+
+
+    useEffect(()=>{
+
+        fetchTrainerData();
+
+    },[])
+  
 
     return (
         <div className="min-h-screen bg-gradient-to-br from-white to-gray-50 py-8 px-4 sm:px-6 lg:px-8">
@@ -28,20 +51,22 @@ export default function ProfilePage() {
                     {/* Profile Header with Avatar */}
                     <div className="relative bg-gradient-to-r from-indigo-500 to-blue-500 h-32"></div>
 
-                    <div className="px-6 sm:px-8 pb-8">
+                    <div className="px-6 py-3 sm:px-8 pb-8">
                         {/* Avatar Section */}
-                        <div className="flex flex-col sm:flex-row sm:items-end sm:gap-6 mb-8">
-                            <div className="mb-4 sm:mb-0">
-                                <img
-                                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
-                                    alt="Profile Avatar"
-                                    className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
-                                />
-                            </div>
+                        <div className="flex flex-col sm:flex-row  sm:items-end sm:gap-6 mb-8">
+                        <div className="relative group mb-4 sm:mb-0 ">
+  <div className="w-32 h-32 self-center rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 p-[3px] shadow-xl transition-transform duration-300 group-hover:scale-105">
+    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+      <span className="text-6xl font-bold text-gray-800 select-none">
+        {trainerData?.name?.trim()?.charAt(0)?.toUpperCase() || '?'}
+      </span>
+    </div>
+  </div>
+</div>
 
-                            <div className="flex-1">
-                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{trainerData.name}</h2>
-                                <p className="text-indigo-600 font-semibold text-lg">{trainerData.designation}</p>
+                            <div className="self-center flex-1 ">
+                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{trainerData?.name}</h2>
+                                <p className="text-indigo-600 font-semibold text-lg">{trainerData?.designation}</p>
                             </div>
 
                             {/* Edit Button */}
@@ -61,7 +86,7 @@ export default function ProfilePage() {
                                 <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block">
                                     Employee ID
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.employeeId}</p>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData?.employeeID}</p>
                             </div>
 
                             {/* Department */}
@@ -69,7 +94,7 @@ export default function ProfilePage() {
                                 <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 block">
                                     Department
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.department}</p>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData?.department}</p>
                             </div>
 
                             {/* Email */}
@@ -78,7 +103,7 @@ export default function ProfilePage() {
                                     <Mail size={16} className="text-indigo-600" />
                                     Email Address
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium break-all">{trainerData.email}</p>
+                                <p className="text-gray-900 text-lg font-medium break-all">{trainerData?.email}</p>
                             </div>
 
                             {/* Phone */}
@@ -87,7 +112,7 @@ export default function ProfilePage() {
                                     <Phone size={16} className="text-indigo-600" />
                                     Phone Number
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.phone}</p>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData?.phone}</p>
                             </div>
 
                             {/* Joining Date */}
@@ -96,16 +121,16 @@ export default function ProfilePage() {
                                     <Calendar size={16} className="text-indigo-600" />
                                     Joining Date
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.joiningDate}</p>
+                                <p className="text-gray-900 text-lg font-medium"> {trainerData?.DOJ ? trainerData.DOJ.split('T')[0] : ''}</p>
                             </div>
 
                             {/* Qualifications */}
                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
                                 <label className="text-gray-600 text-sm font-semibold uppercase tracking-wider mb-2 flex items-center gap-2 mb-2">
                                     <BookOpen size={16} className="text-indigo-600" />
-                                    Qualifications
+                                    Role
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{trainerData.qualifications}</p>
+                                <p className="text-gray-900 text-lg font-medium">{trainerData?.role}</p>
                             </div>
                         </div>
                     </div>

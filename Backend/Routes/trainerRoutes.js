@@ -1,10 +1,11 @@
 const express = require('express')
 const router = express.Router();
-const marksEntry = require('../controllers/trainers')
+const {MarksEntry, getTrainerData} = require('../controllers/trainers')
 
 
 
-router.put('/updatemarks',marksEntry)
+router.put('/updatemarks',MarksEntry)
+router.get('/gettrainerdata/:id',getTrainerData)
 
 
 module.exports  = router;
