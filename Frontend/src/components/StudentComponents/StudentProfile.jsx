@@ -55,8 +55,8 @@ export default function StudentProfile() {
                             </div>
 
                             <div className="flex-1">
-                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{studentData.name}</h2>
-                                <p className="text-indigo-600 font-semibold text-lg">{studentData.section}</p>
+                                <h2 className="text-3xl font-bold text-gray-900 mb-1">{studentData?.name}</h2>
+                                <p className="text-indigo-600 font-semibold text-lg">{studentData?.section}</p>
                             </div>
 
                             {/* Edit Button */}
@@ -77,7 +77,7 @@ export default function StudentProfile() {
                                     <Hash size={16} className="text-indigo-600" />
                                     Roll No.
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.rollno}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.rollno}</p>
                             </div>
 
                             {/* Department */}
@@ -86,7 +86,7 @@ export default function StudentProfile() {
                                     <School size={16} className="text-indigo-600" />
                                    Program
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.program}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.program}</p>
                             </div>
                                 {/* Email */}
                             <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-6 border border-gray-200 hover:shadow-md transition-shadow duration-300">
@@ -94,7 +94,7 @@ export default function StudentProfile() {
                                     <GraduationCap size={16} className="text-indigo-600" />
                                     Specialization
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium break-all">{studentData.specialization ? studentData.specialization.toUpperCase():studentData.specialization}</p>
+                                <p className="text-gray-900 text-lg font-medium break-all">{studentData?.specialization ? studentData?.specialization.toUpperCase():studentData?.specialization}</p>
                             </div>
 
                             {/* Phone */}
@@ -103,7 +103,7 @@ export default function StudentProfile() {
                                     <User size={16} className="text-indigo-600" />
                                     Role
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.role ? studentData.role.toUpperCase():studentData.role}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.role ? studentData?.role.toUpperCase():studentData?.role}</p>
                             </div>
 
                             {/* Email */}
@@ -112,7 +112,7 @@ export default function StudentProfile() {
                                     <Mail size={16} className="text-indigo-600" />
                                     Email Address
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium break-all">{studentData.email}</p>
+                                <p className="text-gray-900 text-lg font-medium break-all">{studentData?.email}</p>
                             </div>
 
                             {/* Phone */}
@@ -121,7 +121,7 @@ export default function StudentProfile() {
                                     <Phone size={16} className="text-indigo-600" />
                                     Phone Number
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.phone}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.phone}</p>
                             </div>
 
                             {/* Joining Date */}
@@ -130,7 +130,7 @@ export default function StudentProfile() {
                                     <Calendar size={16} className="text-indigo-600" />
                                     Joining Date
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.joiningDate}</p> */}
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.joiningDate}</p> */}
                             {/* </div> */}
 
                             {/* Qualifications */}
@@ -139,7 +139,7 @@ export default function StudentProfile() {
                                     <BookOpen size={16} className="text-indigo-600" />
                                     Qualifications
                                 </label>
-                                <p className="text-gray-900 text-lg font-medium">{studentData.qualifications}</p>
+                                <p className="text-gray-900 text-lg font-medium">{studentData?.qualifications}</p>
                             </div> */}
                         </div>
                     </div>
