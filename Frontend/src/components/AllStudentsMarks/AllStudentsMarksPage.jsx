@@ -104,8 +104,8 @@ import NoResultFound from '../NoResultFound';
 export default function AllStudentsMarksPage() {
   const [searchQuery, setSearchQuery] = useState('');
   const [selectedSection, setSelectedSection] = useState('');
-  const [selectedDepartment, setSelectedDepartment] = useState('');
-  const [selectedYear, setSelectedYear] = useState('');
+  // const [selectedDepartment, setSelectedDepartment] = useState('');
+  // const [selectedYear, setSelectedYear] = useState('');
   const [MOCK_STUDENTS,setMockStudent] = useState([]);
 
   /* Filters */
@@ -134,7 +134,7 @@ export default function AllStudentsMarksPage() {
     const res = await axios.get('http://localhost:5000/student/allstudentdata');
 const formattedData = res.data.map(student => ({
   id: student._id,
-  rollNo: student.rollno,
+  rollno: student.rollno,
   name: student.name,
   section: student.section,
   email: student.email,
@@ -312,9 +312,9 @@ useEffect(() => {
             ):
             (filteredStudents.map(student => (
             
-              <tr key={student.id} className="hover:bg-indigo-50">
+              <tr key={student._id} className="hover:bg-indigo-50">
                 <td className="px-6 py-3 font-medium text-indigo-600">
-                  {student.rollNo}
+                  {student.rollno}
                 </td>
                 <td className="px-6 py-3">{student?.name}</td>
                 <td className="px-6 py-3">{student?.section}</td>
@@ -337,7 +337,7 @@ useEffect(() => {
       <div className="md:hidden p-4 space-y-4">
         {filteredStudents.map(student => (
           <div
-            key={student.id}
+            key={student._id}
             className="border rounded-lg p-4 bg-white shadow-sm"
           >
             <div className="flex justify-between mb-2">

@@ -34,7 +34,7 @@ const studentSchema = mongoose.Schema({
         mock:{
             type:Number,
             min:0,
-            max:30,
+            max:40,
             required:true,
             default:0
             
@@ -92,6 +92,70 @@ const studentSchema = mongoose.Schema({
 
         }
     },
+    mockEvaluator:{
+        mock1:{
+            programming:{
+                type:Number,
+                min:0,
+                max:5},
+            coreConcepts:{
+                type:Number,
+                min:0,
+                max:5},
+            problemSolving:{
+                type:Number,
+                min:0,
+                max:5},
+            domainExpertise:{
+                type:Number,
+                min:0,
+                max:5},
+            totalMarks1:{
+                type:Number,
+                min:0,
+                max:20},
+            remarks:{
+                type:String
+            }
+        },
+        mock2:{
+            coreConcepts:{
+                type:Number,
+                min:0,
+                max:5},
+            problemSolving:{
+                type:Number,
+                min:0,
+                max:5},
+            programming:{
+                type:Number,
+                min:0,
+                max:5},
+            domainExpertise:{
+                type:Number,
+                min:0,
+                max:5},
+            hrInteractionSkills:{
+                type:Number,
+                min:0,
+                max:5},
+            totalMarks2:{
+                type:Number,
+                min:0,
+                max:20},
+            remarks:{
+                type:String
+            }
+        },
+
+        totalMockMarks:{
+            type:Number,
+            min:0,
+            max:40
+        }
+              
+        },
+    
     totalMarks:{
         type:Number,
         min:0,

@@ -3,6 +3,7 @@ import { ChevronDown, Save, CheckCircle, AlertCircle } from 'lucide-react';
 import { useEffect } from 'react';
 import axios from 'axios';
 
+
 const MarksEntryPage = () => {
   // Mock student data
   // const mockStudents = [
@@ -69,6 +70,7 @@ const MarksEntryPage = () => {
   const [students, setStudents] = useState(mockStudents);
   const [selectedSection, setSelectedSection] = useState('All');
   const userType = JSON.parse(localStorage.getItem("USER"))
+  const [section,setSection] = useState([])
   
   const [userRole] = useState(userType.role); 
   const [saveStatus, setSaveStatus] = useState(null);
@@ -79,6 +81,8 @@ const MarksEntryPage = () => {
     if (selectedSection === 'All') return students;
     return students.filter((s) => s.section === selectedSection);
   }, [students, selectedSection]);
+
+ 
 
 
   useEffect(()=>{
@@ -94,6 +98,8 @@ const MarksEntryPage = () => {
       {
         setMockStudents(res.data)
         setStudents(res.data)
+        setSection(...new Set(res.data.map(s => s.section)))
+        
         
       }else{
         alert('Smething Went Wrong...')
@@ -246,9 +252,22 @@ const handleInputChange = (e, studentId) => {
                 onChange={(e) => setSelectedSection(e.target.value)}
                 className="appearance-none rounded-lg border border-gray-300 bg-white px-4 py-2 pr-10 text-sm text-gray-700 transition duration-200 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100"
               >
+
+                {/* {
+                  section.map((sec)=>(
+                    <option key={sec} value={sec}>{`Section ${sec}`}</option>
+                  ))
+                } */}
                 <option value="All">All Sections</option>
-                <option value="A">Section A</option>
-                <option value="B">Section B</option>
+                <option value="SectionA">Section A</option>
+                <option value="SectionB">Section B</option>
+                <option value="SectionC">Section C</option>
+                <option value="SectionD">Section D</option>
+                 <option value="SectionE">Section E</option>
+                <option value="SectionF">Section F</option>
+                <option value="SectionG">Section G</option>
+            
+                
               </select>
               <ChevronDown className="pointer-events-none absolute right-3 top-2.5 h-4 w-4 text-gray-400" />
             </div>

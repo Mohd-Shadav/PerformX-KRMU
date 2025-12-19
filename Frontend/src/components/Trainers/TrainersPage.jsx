@@ -1,9 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import { Menu, X, User, BookOpen, BarChart3, LogOut } from 'lucide-react';
+import { Menu, X, User, BookOpen, BarChart3, LogOut, ClipboardCheck } from 'lucide-react';
 import ProfilePage from '../Profile/ProfilePage';
 import MarksEntryPage from '../MarksEntry/MarksEntryPage';
 import AllStudentsMarksPage from '../AllStudentsMarks/AllStudentsMarksPage';
 import axios from 'axios';
+import MockEvaluator from '../MockEvaluator/MockEvaluator';
 
 export default function TrainersPage({setRole}) {
     const [activeSection, setActiveSection] = useState('profile');
@@ -14,7 +15,8 @@ export default function TrainersPage({setRole}) {
     const navItems = [
         { id: 'profile', label: 'Profile', icon: User },
         { id: 'marks-entry', label: 'Marks Entry', icon: BookOpen },
-        { id: 'all-marks', label: 'All Students Marks', icon: BarChart3 },
+        { id: 'mock-evaluator', label: 'Mock Evaluator', icon: ClipboardCheck },
+         { id: 'all-marks', label: 'All Students Marks', icon: BarChart3 },
     ];
 
     // Render active component
@@ -26,6 +28,8 @@ export default function TrainersPage({setRole}) {
                 return <MarksEntryPage />;
             case 'all-marks':
                 return <AllStudentsMarksPage/>;
+            case 'mock-evaluator':
+                return <MockEvaluator/>;
             default:
                 return <ProfilePage />;
         }
