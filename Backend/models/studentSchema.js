@@ -123,14 +123,11 @@ const studentSchema = mongoose.Schema({
                 type:Number,
                 min:0,
                 max:5},
-            problemSolving:{
+            programmingAndProblemSolving:{
                 type:Number,
                 min:0,
                 max:5},
-            programming:{
-                type:Number,
-                min:0,
-                max:5},
+          
             domainExpertise:{
                 type:Number,
                 min:0,

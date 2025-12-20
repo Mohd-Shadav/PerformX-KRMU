@@ -5,46 +5,7 @@ import axios from 'axios';
 
 
 const MockEvaluator = () => {
-    // Mock student data
-    // const mockStudentsData = [
-    //     {
-    //         id: 1,
-    //         rollNo: 'CS001',
-    //         name: 'Aarav Sharma',
-    //         section: 'A',
-    //         email: 'aarav.sharma@edu.com',
-    //     },
-    //     {
-    //         id: 2,
-    //         rollNo: 'CS002',
-    //         name: 'Priya Verma',
-    //         section: 'A',
-    //         email: 'priya.verma@edu.com',
-    //     },
-    //     {
-    //         id: 3,
-    //         rollNo: 'CS003',
-    //         name: 'Rohan Patel',
-    //         section: 'B',
-    //         email: 'rohan.patel@edu.com',
-    //     },
-    //     {
-    //         id: 4,
-    //         rollNo: 'CS004',
-    //         name: 'Divya Singh',
-    //         section: 'B',
-    //         email: 'divya.singh@edu.com',
-    //     },
-    //     {
-    //         id: 5,
-    //         rollNo: 'CS005',
-    //         name: 'Arjun Kumar',
-    //         section: 'A',
-    //         email: 'arjun.kumar@edu.com',
-    //     },
-    // ];
-
-    // State management
+ 
     const [mockStudentsData,setStudentsData] = useState([])
     const [activeMock, setActiveMock] = useState(1);
     const [loading, setLoading] = useState(false);
@@ -62,30 +23,29 @@ const MockEvaluator = () => {
         // Fetch or load student data here and update state
         try{
             let res = await axios.get("http://localhost:5000/student/allstudentdata");
-            console.log(res.data)
+           
             if(res.status===200)
             {
                 setStudentsData(res.data);
                 setMock1Data(
                     res.data.map((student) => ({
                         ...student,
-                        programmingSkills: 0,
-                        coreConcepts: 0,
-                        problemSolvingSkills: 0,
-                        domainExpertise: 0,
-                        remarks: '',
+                        programming: student.mockEvaluator.mock1.programming || 0,
+                        coreConcepts: student.mockEvaluator.mock1.coreConcepts || 0,
+                        problemSolving: student.mockEvaluator.mock1.problemSolving || 0,
+                        domainExpertise: student.mockEvaluator.mock1.domainExpertise || 0,
+                        remarks: student.mockEvaluator.mock1.remarks||"",
                     }))
                 );
 
                 setMock2Data(
                     res.data.map((student) => ({
                         ...student,
-                        coreConcepts: 0,
-                        problemSolvingSkills: 0,
-                        programmingSkills: 0,
-                        domainExpertise: 0,
-                        hrInteractionSkills: 0,
-                        remarks: '',
+                        coreConcepts: student.mockEvaluator.mock2.coreConcepts || 0,
+                        programmingAndProblemSolving: student.mockEvaluator.mock2.programmingAndProblemSolving || 0 ,
+                        domainExpertise: student.mockEvaluator.mock2.domainExpertise || 0,
+                        hrInteractionSkills: student.mockEvaluator.mock2.hrInteractionSkills || 0,
+                        remarks: student.mockEvaluator.mock2.remarks || '',
                     }))
                 );
             }
@@ -106,9 +66,9 @@ const MockEvaluator = () => {
     // Calculate total marks for Mock 1
     const calculateTotal1 = (student) => {
         return (
-            (student.programmingSkills || 0) +
+            (student.programming || 0) +
             (student.coreConcepts || 0) +
-            (student.problemSolvingSkills || 0) +
+            (student.problemSolving || 0) +
             (student.domainExpertise || 0)
         );
     };
@@ -117,8 +77,8 @@ const MockEvaluator = () => {
     const calculateTotal2 = (student) => {
         return (
             (student.coreConcepts || 0) +
-            (student.problemSolvingSkills || 0) +
-            (student.programmingSkills || 0) +
+            (student.programmingAndProblemSolving|| 0) +
+            
             (student.domainExpertise || 0) +
             (student.hrInteractionSkills || 0)
         );
@@ -135,10 +95,64 @@ const MockEvaluator = () => {
     // Handle save
     const handleSave = async () => {
         setLoading(true);
+    
+        
+
+   const buildPayload = () => {
+  return mockStudentsData.map(student => {
+    const mock1 = mock1Data.find(s => s._id === student._id);
+    const mock2 = mock2Data.find(s => s._id === student._id);
+
+    return {
+    
+      studentId: student._id,
+      rollno: student.rollno,
+      name: student.name,
+      mockEvaluator: {
+        mock1: {
+          programming: mock1?.programming|| 0,
+          coreConcepts: mock1?.coreConcepts || 0,
+          problemSolving: mock1?.problemSolving || 0,
+          domainExpertise: mock1?.domainExpertise || 0,
+          totalMarks1: calculateTotal1(mock1 || {}),
+          remarks: mock1?.remarks || ""
+        },
+        mock2: {
+         
+          coreConcepts: mock2?.coreConcepts || 0,
+          programmingAndProblemSolving: mock2?.programmingAndProblemSolving || 0,
+          domainExpertise: mock2?.domainExpertise || 0,
+          hrInteractionSkills: mock2?.hrInteractionSkills || 0,
+          totalMarks2: calculateTotal2(mock2 || {}),
+          remarks: mock2?.remarks || ""
+        }
+      }
+    };
+  });
+};
+const payload = buildPayload();
+
+
+
+try{
+
+    let res = await axios.put("http://localhost:5000/trainer/updatemockevaluationmarks",payload,{
+        headers:{
+            'Content-Type':'application/json'
+        }
+    });
+
+ 
+
+}catch(err){
+    alert("Error while saving mock evaluator data");
+}
+
+   
         // Simulate API call
         setTimeout(() => {
             setLoading(false);
-            setSaveMessage(`Mock Evaluator ${activeMock} saved successfully!`);
+            setSaveMessage(`Mock Evaluator Marks saved successfully!`);
             setTimeout(() => setSaveMessage(null), 4000);
         }, 1200);
     };
@@ -162,11 +176,11 @@ const MockEvaluator = () => {
                     type="number"
                     min="0"
                     max="10"
-                    value={student.programmingSkills}
+                    value={student.programming}
                     onChange={(e) =>
                         handleInputChange(
                             student._id,
-                            'programmingSkills',
+                            'programming',
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
@@ -194,11 +208,11 @@ const MockEvaluator = () => {
                     type="number"
                     min="0"
                     max="10"
-                    value={student.problemSolvingSkills}
+                    value={student.problemSolving}
                     onChange={(e) =>
                         handleInputChange(
                             student._id,
-                            'problemSolvingSkills',
+                            'problemSolving',
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
@@ -274,18 +288,18 @@ const MockEvaluator = () => {
                     type="number"
                     min="0"
                     max="10"
-                    value={student.problemSolvingSkills}
+                    value={student.programmingAndProblemSolving}
                     onChange={(e) =>
                         handleInputChange(
                             student._id,
-                            'problemSolvingSkills',
+                            'programmingAndProblemSolving',
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
                     className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                 />
             </td>
-            <td className="px-4 py-3">
+            {/* <td className="px-4 py-3">
                 <input
                     type="number"
                     min="0"
@@ -300,7 +314,7 @@ const MockEvaluator = () => {
                     }
                     className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
                 />
-            </td>
+            </td> */}
             <td className="px-4 py-3">
                 <input
                     type="number"
@@ -448,11 +462,9 @@ const MockEvaluator = () => {
                                             Core Concepts
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Problem Solving
+                                          Programming & Problem Solving
                                         </th>
-                                        <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Programming
-                                        </th>
+                                      
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
                                             Domain Expertise
                                         </th>
@@ -484,13 +496,13 @@ const MockEvaluator = () => {
                 <div className="md:hidden space-y-4 p-4">
                     {currentData.map((student, index) => (
                         <div
-                            key={student.id}
+                            key={student._id}
                             className="border border-gray-200 rounded-lg p-4 bg-white hover:shadow-md transition-shadow"
                         >
                             {/* Header Info */}
                             <div className="border-b border-gray-200 pb-4 mb-4">
                                 <p className="text-xs text-gray-600 font-medium">
-                                    ROLL NO: {student.rollNo}
+                                    ROLL NO: {student.rollno}
                                 </p>
                                 <h3 className="text-base font-semibold text-gray-900 mt-1">
                                     {student.name}
@@ -505,13 +517,13 @@ const MockEvaluator = () => {
                                     <>
                                         {[
                                             {
-                                                label: 'Programming Skills',
-                                                field: 'programmingSkills',
+                                                label: 'Programming',
+                                                field: 'programming',
                                             },
                                             { label: 'Core Concepts', field: 'coreConcepts' },
                                             {
-                                                label: 'Problem Solving Skills',
-                                                field: 'problemSolvingSkills',
+                                                label: 'Problem Solving',
+                                                field: 'problemSolving',
                                             },
                                             { label: 'Domain Expertise', field: 'domainExpertise' },
                                         ].map(({ label, field }) => (
@@ -526,7 +538,7 @@ const MockEvaluator = () => {
                                                     value={student[field]}
                                                     onChange={(e) =>
                                                         handleInputChange(
-                                                            student.id,
+                                                            student._id,
                                                             field,
                                                              e.target.value === '' ? '' : Number(e.target.value)
                                                         )
@@ -541,10 +553,9 @@ const MockEvaluator = () => {
                                         {[
                                             { label: 'Core Concepts', field: 'coreConcepts' },
                                             {
-                                                label: 'Problem Solving Skills',
-                                                field: 'problemSolvingSkills',
+                                                label: 'Programming & Problem Solving',
+                                                field: 'programmingAndProblemSolving',
                                             },
-                                            { label: 'Programming Skills', field: 'programmingSkills' },
                                             { label: 'Domain Expertise', field: 'domainExpertise' },
                                             {
                                                 label: 'HR Interaction Skills',
@@ -595,7 +606,7 @@ const MockEvaluator = () => {
                                 <textarea
                                     value={student.remarks}
                                     onChange={(e) =>
-                                        handleInputChange(student.id, 'remarks', e.target.value)
+                                        handleInputChange(student._id, 'remarks', e.target.value)
                                     }
                                     placeholder="Add evaluation remarks..."
                                     rows="3"
