@@ -3,11 +3,16 @@ const studentSchema = require("../models/studentSchema")
 
 const studentAllData = async(req,res)=>{
 
+    const offset = parseInt(req.query.offset) || 0;
+    const limit = 20;
+
     try{
-        const result = await studentSchema.find();
-        
-       
-        res.status(200).send(result)
+        const students = await studentSchema.find().skip(offset).limit(limit);
+const total = await studentSchema.countDocuments();
+res.status(200).json({
+  data: students,
+  hasMore: offset + students.length < total
+});
     }catch(err){
 
         res.status(404).send("Something Went Wrong")

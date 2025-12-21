@@ -2,76 +2,18 @@ import React, { useState, useMemo } from 'react';
 import { ChevronDown, Save, CheckCircle, AlertCircle } from 'lucide-react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import InfiniteScroll from 'react-infinite-scroll-component';
+
 
 
 const MarksEntryPage = () => {
-  // Mock student data
-  // const mockStudents = [
-  //   {
-  //     id: 1,
-  //     rollNo: 'KR001',
-  //     name: 'Aarav Sharma',
-  //     email: 'aarav.sharma@example.com',
-  //     section: 'A',
-  //     mockInterview: 25,
-  //     oops: 14,
-  //     dbms: 12,
-  //     problemSolving: 20,
-  //     os: 13,
-  //     aptitudeTest: 45,
-  //     cocubes: 42,
-  //   },
-  //   {
-  //     id: 2,
-  //     rollNo: 'KR002',
-  //     name: 'Priya Gupta',
-  //     email: 'priya.gupta@example.com',
-  //     section: 'B',
-  //     mockInterview: 28,
-  //     oops: 15,
-  //     dbms: 14,
-  //     problemSolving: 23,
-  //     os: 14,
-  //     aptitudeTest: 48,
-  //     cocubes: 46,
-  //   },
-  //   {
-  //     id: 3,
-  //     rollNo: 'KR003',
-  //     name: 'Rajesh Kumar',
-  //     email: 'rajesh.kumar@example.com',
-  //     section: 'A',
-  //     mockInterview: 22,
-  //     oops: 12,
-  //     dbms: 11,
-  //     problemSolving: 18,
-  //     os: 12,
-  //     aptitudeTest: 40,
-  //     cocubes: 38,
-  //   },
-  //   {
-  //     id: 4,
-  //     rollNo: 'KR004',
-  //     name: 'Neha Singh',
-  //     email: 'neha.singh@example.com',
-  //     section: 'B',
-  //     mockInterview: 29,
-  //     oops: 15,
-  //     dbms: 15,
-  //     problemSolving: 24,
-  //     os: 15,
-  //     aptitudeTest: 50,
-  //     cocubes: 49,
-  //   },
-  // ];
-
-  // State management
+  
   const [mockStudents,setMockStudents] = useState([])
   const [students, setStudents] = useState(mockStudents);
   const [selectedSection, setSelectedSection] = useState('All');
   const userType = JSON.parse(localStorage.getItem("USER"))
   const [section,setSection] = useState([])
-  
+  const [hasMore,setHasMore] = useState(true)
   const [userRole] = useState(userType.role); 
   const [saveStatus, setSaveStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -83,22 +25,21 @@ const MarksEntryPage = () => {
   }, [students, selectedSection]);
 
  
-
-
-  useEffect(()=>{
-
+ const fetchStudentData =async ()=>{
+      let res = await axios.get(`http://localhost:5000/student/allstudentdata?offset=${students.length}`);
 
  
-    const fetchStudentData =async ()=>{
-      let res = await axios.get('http://localhost:5000/student/allstudentdata');
 
-      
+      console.log('hello',students.length,res,res.data.hasMore);
 
       if(res.status===200)
       {
-        setMockStudents(res.data)
-        setStudents(res.data)
-        setSection(...new Set(res.data.map(s => s.section)))
+        console.log("sab sahi hai")
+       
+       setStudents(prev => [...prev, ...res.data.data]); 
+  setSection([...new Set([...students, ...res.data.data].map(s => s.section))]);
+  setHasMore(res.data.hasMore);
+
         
         
       }else{
@@ -106,9 +47,12 @@ const MarksEntryPage = () => {
       }
     }
 
+  useEffect(()=>{
+
+
     fetchStudentData()
 
-  },[saveStatus])
+  },[])
 
 
 
@@ -175,35 +119,24 @@ const handleInputChange = (e, studentId) => {
   const handleSaveMarks = async () => {
     setIsLoading(true);
     setSaveStatus(null);
+   
 
-    
+    let isValid = students.every((student) => {
+     
+      return student.technicalAssessment.mock <= 40 &&
+             student.technicalAssessment.oops <= 15 &&
+             student.technicalAssessment.dbms <= 15 &&
+             student.technicalAssessment.problemSolving <= 20 &&
+             student.technicalAssessment.os <= 10 &&
+             student.aptitudeAssessment.aptitudeTest <= 50 &&
+             student.aptitudeAssessment.cocubesAmcat <= 50
+      
+    });
 
-    // Prepare payload
-    // const payload = {
-    //   userRole,
-    //   timestamp: new Date().toISOString(),
-    //   marks: filteredStudents.map((student) => ({
-    //     studentId: student._id,
-    //     rollNo: student.rollno,
-    //     name: student.name,
-    //     section: student.section,
-    //     technical: {
-    //       mock: student.technicalAssessment.mock,
-    //       oops: student.technicalAssessment.oops,
-    //       dbms: student.technicalAssessment.dbms,
-    //       problemSolving: student.technicalAssessment.problemSolving,
-    //       os: student.technicalAssessment.os,
-    //       total: calculateTechnicalTotal(student),
-    //     },
-    //     aptitude: {
-    //       aptitudeTest: student.aptitudeAssessment.aptitudeTest,
-    //       cocubes: student.aptitudeAssessment.cocubes,
-    //       total: calculateAptitudeTotal(student),
-    //     },
-    //     grandTotal: calculateGrandTotal(student),
-    //   })),
-    // };
+  
 
+
+    if(isValid){
     try{
       let res = await axios.put('http://localhost:5000/trainer/updatemarks',students,{
         headers:{
@@ -214,6 +147,7 @@ const handleInputChange = (e, studentId) => {
     
 
     }catch(err){
+      alert('Error in saving marks. Please try again.')
 
     }
 
@@ -224,6 +158,18 @@ const handleInputChange = (e, studentId) => {
       setTimeout(() => setSaveStatus(null), 4000);
    
     }, 1500);
+  }
+else{
+    setTimeout(() => {
+      setIsLoading(false);
+      setSaveStatus('error');
+      setTimeout(() => setSaveStatus(null), 4000);
+   
+    }, 1500);
+ 
+}
+
+
   };
 
   return (
@@ -286,17 +232,32 @@ const handleInputChange = (e, studentId) => {
             {isLoading ? 'Saving...' : 'Save Marks'}
           </button>
         </div>
-        {saveStatus === 'success' && (
+        {saveStatus === 'success' ? (
           <div className="mb-6 flex items-center gap-3 rounded-lg border border-green-200 bg-green-50 p-4 fixed top-25 right-10">
             <CheckCircle className="h-5 w-5 text-green-600" />
             <p className="text-sm font-medium text-green-800">
               Marks saved successfully!
             </p>
           </div>
+        ):saveStatus==='error' && (
+          <div className="mb-6 flex items-center gap-3 rounded-lg border border-red-200 bg-red-50 p-4 fixed top-25 right-10">
+            <CheckCircle className="h-5 w-5 text-red-600" />
+            <p className="text-sm font-medium text-red-800">
+              Error : Marks exceed maximum allowed values.
+            </p>
+          </div>
         )}
 
         {/* Table Container */}
         <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
+                                 <InfiniteScroll
+  dataLength={students.length}
+  next={fetchStudentData}
+  hasMore={hasMore}
+  loader={<h4>Loading...</h4>}
+  endMessage={<p>No more data</p>}
+>
+ 
           <table className="w-full text-sm">
             {/* Header Row 1 - Main Columns */}
             <thead>
@@ -337,7 +298,7 @@ const handleInputChange = (e, studentId) => {
                 <th className="px-4 py-2 text-left font-medium text-gray-700"></th>
                 <th className="px-4 py-2 text-left font-medium text-gray-700"></th>
                 <th className="border-l border-gray-300 px-4 py-2 text-center font-medium text-gray-700">
-                  Mock Interview (30)
+                  Mock Interview (40)
                 </th>
                 <th className="px-4 py-2 text-center font-medium text-gray-700">
                   OOPs (15)
@@ -346,10 +307,10 @@ const handleInputChange = (e, studentId) => {
                   DBMS (15)
                 </th>
                 <th className="px-4 py-2 text-center font-medium text-gray-700">
-                  Problem Solving (25)
+                  Problem Solving (20)
                 </th>
                 <th className="px-4 py-2 text-center font-medium text-gray-700">
-                  OS (15)
+                  OS (10)
                 </th>
                 <th className="border-l border-gray-300 px-4 py-2 text-center font-medium text-gray-700">
                   Aptitude Test (50)
@@ -365,9 +326,12 @@ const handleInputChange = (e, studentId) => {
 
             {/* Table Body */}
             <tbody>
+
+              
+
               {filteredStudents.map((student, idx) => (
                 <tr
-                  key={student._id}
+                  key={idx}
                   className={`border-b border-gray-200 transition duration-150 hover:bg-indigo-50 ${
                     idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'
                   }`}
@@ -398,7 +362,7 @@ const handleInputChange = (e, studentId) => {
                       name='mock'
                       onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('mock')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.mock>40 && 'text-red-500'} ${
                         isFieldEditable('mock')
                           ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -415,7 +379,7 @@ const handleInputChange = (e, studentId) => {
                      name='oops'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('oops')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.oops>15 && 'text-red-500'} ${
                         isFieldEditable('oops')
                           ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -432,7 +396,7 @@ const handleInputChange = (e, studentId) => {
                       name='dbms'
                       onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('dbms')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.dbms>15 && 'text-red-500'}  ${
                         isFieldEditable('dbms')
                           ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -449,7 +413,7 @@ const handleInputChange = (e, studentId) => {
                       name='problemSolving'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('problemSolving')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.problemSolving>20 && 'text-red-500'} ${
                         isFieldEditable('problemSolving')
                           ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -466,7 +430,7 @@ const handleInputChange = (e, studentId) => {
                       name='os'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('os')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.os>10 && 'text-red-500'} ${
                         isFieldEditable('os')
                           ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -484,7 +448,7 @@ const handleInputChange = (e, studentId) => {
                       name='aptitudeTest'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('aptitudeTest')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.aptitudeTest>50 && 'text-red-500'} ${
                         isFieldEditable('aptitudeTest')
                           ? 'border-blue-300 bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -501,7 +465,7 @@ const handleInputChange = (e, studentId) => {
                       name='cocubesAmcat'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('cocubes')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.aptitudeAssessment?.cocubesAmcat>50&&'text-red-500'}  ${
                         isFieldEditable('cocubes')
                           ? 'border-blue-300 bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
@@ -517,6 +481,8 @@ const handleInputChange = (e, studentId) => {
               ))}
             </tbody>
           </table>
+              </InfiniteScroll>
+              
         </div>
 
         {/* Save Button */}
