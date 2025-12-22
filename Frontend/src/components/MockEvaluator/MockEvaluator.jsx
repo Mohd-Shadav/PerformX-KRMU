@@ -24,28 +24,29 @@ const MockEvaluator = () => {
         try{
             let res = await axios.get("http://localhost:5000/student/allstudentdata");
            
+           
             if(res.status===200)
             {
                 setStudentsData(res.data);
                 setMock1Data(
                     res.data.map((student) => ({
                         ...student,
-                        programming: student.mockEvaluator.mock1.programming || 0,
-                        coreConcepts: student.mockEvaluator.mock1.coreConcepts || 0,
-                        problemSolving: student.mockEvaluator.mock1.problemSolving || 0,
-                        domainExpertise: student.mockEvaluator.mock1.domainExpertise || 0,
-                        remarks: student.mockEvaluator.mock1.remarks||"",
+                        programming: student?.mockEvaluator.mock1.programming || 0,
+                        coreConcepts: student?.mockEvaluator.mock1.coreConcepts || 0,
+                        problemSolving: student?.mockEvaluator.mock1.problemSolving || 0,
+                        domainExpertise: student?.mockEvaluator.mock1.domainExpertise || 0,
+                        remarks: student?.mockEvaluator.mock1.remarks||"",
                     }))
                 );
 
                 setMock2Data(
                     res.data.map((student) => ({
                         ...student,
-                        coreConcepts: student.mockEvaluator.mock2.coreConcepts || 0,
-                        programmingAndProblemSolving: student.mockEvaluator.mock2.programmingAndProblemSolving || 0 ,
-                        domainExpertise: student.mockEvaluator.mock2.domainExpertise || 0,
-                        hrInteractionSkills: student.mockEvaluator.mock2.hrInteractionSkills || 0,
-                        remarks: student.mockEvaluator.mock2.remarks || '',
+                        coreConcepts: student?.mockEvaluator.mock2.coreConcepts || 0,
+                        programmingAndProblemSolving: student?.mockEvaluator.mock2.programmingAndProblemSolving || 0 ,
+                        domainExpertise: student?.mockEvaluator.mock2.domainExpertise || 0,
+                        hrInteractionSkills: student?.mockEvaluator.mock2.hrInteractionSkills || 0,
+                        remarks: student?.mockEvaluator.mock2.remarks || '',
                     }))
                 );
             }

@@ -2,18 +2,18 @@ import React, { useState, useMemo } from 'react';
 import { ChevronDown, Save, CheckCircle, AlertCircle } from 'lucide-react';
 import { useEffect } from 'react';
 import axios from 'axios';
-import InfiniteScroll from 'react-infinite-scroll-component';
+
 
 
 
 const MarksEntryPage = () => {
   
   const [mockStudents,setMockStudents] = useState([])
-  const [students, setStudents] = useState(mockStudents);
+  const [students, setStudents] = useState([]);
   const [selectedSection, setSelectedSection] = useState('All');
   const userType = JSON.parse(localStorage.getItem("USER"))
   const [section,setSection] = useState([])
-  const [hasMore,setHasMore] = useState(true)
+
   const [userRole] = useState(userType.role); 
   const [saveStatus, setSaveStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -25,34 +25,34 @@ const MarksEntryPage = () => {
   }, [students, selectedSection]);
 
  
- const fetchStudentData =async ()=>{
-      let res = await axios.get(`http://localhost:5000/student/allstudentdata?offset=${students.length}`);
+ const fetchStudentData = async () => {
 
- 
 
-      console.log('hello',students.length,res,res.data.hasMore);
+  try {
+    const res = await axios.get(
+      `http://localhost:5000/student/allstudentdata`
+    );
 
-      if(res.status===200)
-      {
-        console.log("sab sahi hai")
-       
-       setStudents(prev => [...prev, ...res.data.data]); 
-  setSection([...new Set([...students, ...res.data.data].map(s => s.section))]);
-  setHasMore(res.data.hasMore);
+    if (res.status === 200) {
+      setStudents(prev => {
+        const updated = [...prev, ...res.data];
+        setSection([...new Set(updated.map(s => s.section))]);
+        return updated;
+      });
 
-        
-        
-      }else{
-        alert('Smething Went Wrong...')
-      }
+   
     }
+  } catch (err) {
+    console.error(err);
+  } 
+};
 
   useEffect(()=>{
 
 
     fetchStudentData()
 
-  },[])
+  },[saveStatus])
 
 
 
@@ -250,13 +250,7 @@ else{
 
         {/* Table Container */}
         <div className="overflow-x-auto rounded-lg border border-gray-200 shadow-sm">
-                                 <InfiniteScroll
-  dataLength={students.length}
-  next={fetchStudentData}
-  hasMore={hasMore}
-  loader={<h4>Loading...</h4>}
-  endMessage={<p>No more data</p>}
->
+
  
           <table className="w-full text-sm">
             {/* Header Row 1 - Main Columns */}
@@ -481,7 +475,7 @@ else{
               ))}
             </tbody>
           </table>
-              </InfiniteScroll>
+          
               
         </div>
 
