@@ -355,12 +355,8 @@ else{
                       value={student?.technicalAssessment?.mock}
                       name='mock'
                       onChange={(e) => handleInputChange(e, student._id)}
-                      disabled={!isFieldEditable('mock')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.mock>40 && 'text-red-500'} ${
-                        isFieldEditable('mock')
-                          ? 'border-indigo-300 bg-white focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100'
-                          : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'
-                      }`}
+                      disabled={true}
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed `}
                     />
                   </td>
 

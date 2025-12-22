@@ -96,11 +96,44 @@ const MockEvaluator = () => {
     // Handle save
     const handleSave = async () => {
         setLoading(true);
-    
-        
+
+
+        let isValid1 = mock1Data.every((student) => {
+            return (
+                student.programming <= 5 &&
+                student.coreConcepts <= 5 &&
+                student.problemSolving <= 5 &&
+                student.domainExpertise <= 5
+            );
+        });
+
+            let isValid2 = mock2Data.every((student) => {
+            return (
+                student.programmingAndProblemSolving <= 5 &&
+                student.coreConcepts <= 5 &&
+                student.hrInteractionSkills <= 5 &&
+                student.domainExpertise <= 5
+            );
+        });
+
+  
+    if((activeMock===1 && !isValid1) || (activeMock===2 && !isValid2))
+    {
+          // Simulate API call
+        setTimeout(() => {
+            setLoading(false);
+            setSaveMessage(`Mock Evaluator Marks Exceeded!`);
+            setTimeout(() => setSaveMessage(null), 4000);
+        }, 1200);
+      
+        return;
+    }
 
    const buildPayload = () => {
   return mockStudentsData.map(student => {
+
+   
+
     const mock1 = mock1Data.find(s => s._id === student._id);
     const mock2 = mock2Data.find(s => s._id === student._id);
 
@@ -185,7 +218,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.programming>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3">
@@ -201,7 +234,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.coreConcepts>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3">
@@ -217,7 +250,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.problemSolving>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3">
@@ -233,7 +266,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.domainExpertise>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3 text-sm font-semibold text-indigo-600">
@@ -281,7 +314,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.coreConcepts>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3">
@@ -297,7 +330,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.programmingAndProblemSolving>5 && 'text-red-500'}`}
                 />
             </td>
             {/* <td className="px-4 py-3">
@@ -329,7 +362,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.domainExpertise>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3">
@@ -345,7 +378,7 @@ try{
                              e.target.value === '' ? '' : Number(e.target.value)
                         )
                     }
-                    className="w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+                    className={`w-16 px-2 py-1 text-sm border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent ${student?.hrInteractionSkills>5 && 'text-red-500'}`}
                 />
             </td>
             <td className="px-4 py-3 text-sm font-semibold text-indigo-600">
@@ -379,8 +412,12 @@ try{
             </div>
 
             {/* Success Message */}
-            {saveMessage && (
+            {saveMessage==="Mock Evaluator Marks saved successfully!" ? (
                 <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg text-green-800 text-sm animate-fade-in">
+                    {saveMessage}
+                </div>
+            ) : saveMessage==="Mock Evaluator Marks Exceeded!" && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg text-red-800 text-sm animate-fade-in">
                     {saveMessage}
                 </div>
             )}
@@ -445,37 +482,37 @@ try{
                                 {activeMock === 1 ? (
                                     <>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Programming
+                                            Programming (5)
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Core Concepts
+                                            Core Concepts (5)
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Problem Solving
+                                            Problem Solving (5)
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Domain Expertise
+                                            Domain Expertise (5)
                                         </th>
                                     </>
                                 ) : (
                                     <>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Core Concepts
+                                            Core Concepts (5)
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                          Programming & Problem Solving
+                                          Programming & PS (5)
                                         </th>
                                       
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            Domain Expertise
+                                            Domain Expertise (5)
                                         </th>
                                         <th className="px-4 py-3 text-center font-semibold text-gray-700">
-                                            HR Interaction
+                                            HR Interaction (5)
                                         </th>
                                     </>
                                 )}
                                 <th className="px-4 py-3 text-center font-semibold text-indigo-700">
-                                    Total
+                                    Total (20)
                                 </th>
                                 <th className="px-4 py-3 text-center font-semibold text-gray-700">
                                     Remarks

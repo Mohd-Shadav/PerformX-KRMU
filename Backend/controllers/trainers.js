@@ -100,6 +100,10 @@ const mockEvaluatorMarksEntry = async (req, res) => {
           filter: { _id: s.studentId}, 
           update: {
             $set: {
+              technicalAssessment:{
+                ...s.technicalAssessment,
+                mock: mock1Total + mock2Total
+              },
               mockEvaluator: {
                 mock1: {
                   ...s.mockEvaluator.mock1,
@@ -110,7 +114,8 @@ const mockEvaluatorMarksEntry = async (req, res) => {
                  
                 },
                 totalMockMarks: mock1Total + mock2Total
-              }
+              },
+             
             }
           }
         }
