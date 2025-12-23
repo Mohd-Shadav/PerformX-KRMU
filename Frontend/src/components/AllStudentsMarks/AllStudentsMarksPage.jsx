@@ -4,101 +4,6 @@ import axios from 'axios'
 import Loader from '../Loader'
 import NoResultFound from '../NoResultFound';
 
-/* ---------------- MOCK DATA ---------------- */
-// const MOCK_STUDENTS = [
-//   {
-//     id: 1,
-//     rollNo: 'CS001',
-//     name: 'Aarav Sharma',
-//     section: 'A',
-//     email: 'aarav.sharma@edu.com',
-
-//     technical: {
-//       mock: 25,
-//       oops: 12,
-//       dbms: 13,
-//       problemSolving: 20,
-//       os: 10,
-//     },
-
-//     aptitude: {
-//       aptitudeTest: 40,
-//       cocubes: 42,
-//     },
-
-//     totalMarks: 162,
-//   },
-
-//   {
-//     id: 2,
-//     rollNo: 'CS002',
-//     name: 'Priya Verma',
-//     section: 'B',
-//     email: 'priya.verma@edu.com',
-
-//     technical: {
-//       mock: 28,
-//       oops: 14,
-//       dbms: 12,
-//       problemSolving: 22,
-//       os: 11,
-//     },
-
-//     aptitude: {
-//       aptitudeTest: 45,
-//       cocubes: 46,
-//     },
-
-//     totalMarks: 178,
-//   },
-
-//   {
-//     id: 3,
-//     rollNo: 'ME001',
-//     name: 'Zara Khan',
-//     section: 'A',
-//     email: 'zara.khan@edu.com',
-
-//     technical: {
-//       mock: 20,
-//       oops: 10,
-//       dbms: 11,
-//       problemSolving: 18,
-//       os: 9,
-//     },
-
-//     aptitude: {
-//       aptitudeTest: 35,
-//       cocubes: 38,
-//     },
-
-//     totalMarks: 141,
-//   },
-
-//   {
-//     id: 4,
-//     rollNo: 'CS004',
-//     name: 'Divya Nair',
-//     section: 'C',
-//     email: 'divya.nair@edu.com',
-
-//     technical: {
-//       mock: 27,
-//       oops: 13,
-//       dbms: 14,
-//       problemSolving: 21,
-//       os: 12,
-//     },
-
-//     aptitude: {
-//       aptitudeTest: 48,
-//       cocubes: 47,
-//     },
-
-//     totalMarks: 182,
-//   },
-// ];
-
 
 /* ---------------- COMPONENT ---------------- */
 export default function AllStudentsMarksPage() {
@@ -119,7 +24,7 @@ export default function AllStudentsMarksPage() {
     return MOCK_STUDENTS.filter(student => {
       const searchMatch =
         student.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        student.rollNo.toLowerCase().includes(searchQuery.toLowerCase());
+        student.rollno.toLowerCase().includes(searchQuery.toLowerCase());
 
       return (
         searchMatch &&

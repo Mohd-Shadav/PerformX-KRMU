@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import React, { useEffect, useMemo, useState } from 'react';
+import { ChevronDown, Search } from 'lucide-react';
 import axios from 'axios';
 
 
@@ -11,11 +11,15 @@ const MockEvaluator = () => {
     const [loading, setLoading] = useState(false);
     const [saveMessage, setSaveMessage] = useState(null);
     const [expandedRemarksId, setExpandedRemarksId] = useState(null);
+    const [searchQuery, setSearchQuery] = useState('');
+    const [selectedSection, setSelectedSection] = useState('All');
+    const [section, setSection] = useState([]);
 
     // Initialize marks and remarks state
     const [mock1Data, setMock1Data] = useState([]);
 
     const [mock2Data, setMock2Data] = useState([]);
+
 
 
 
@@ -28,6 +32,7 @@ const MockEvaluator = () => {
             if(res.status===200)
             {
                 setStudentsData(res.data);
+                 setSection([...new Set(res.data.map(s => s.section))]);
                 setMock1Data(
                     res.data.map((student) => ({
                         ...student,
@@ -63,6 +68,22 @@ const MockEvaluator = () => {
     // Get current data based on active mock
     const currentData = activeMock === 1 ? mock1Data : mock2Data;
     const setCurrentData = activeMock === 1 ? setMock1Data : setMock2Data;
+
+    
+ const filteredStudents = useMemo(() => {
+        // if (selectedSection === 'All') return students;
+       
+        return currentData.filter((s) =>  {
+           const searchMatch =
+            s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+            s.rollno.toLowerCase().includes(searchQuery.toLowerCase());
+    
+            
+          
+          return ( searchMatch &&
+           (selectedSection=== 'All' || s.section === selectedSection) )
+        });
+      }, [currentData,searchQuery, selectedSection]);
 
     // Calculate total marks for Mock 1
     const calculateTotal1 = (student) => {
@@ -410,6 +431,81 @@ try{
                     Evaluate student performance across mock interviews
                 </p>
             </div>
+               <div className="px-6 py-6 bg-gray-50 border-b border-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Search */}
+          <div className="lg:col-span-2">
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Search
+            </label>
+            <div className="relative">
+              <Search className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
+              <input
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="Name or Roll No"
+                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              />
+            </div>
+          </div>
+
+          {/* Section */}
+          <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Section
+            </label>
+            <select
+              value={selectedSection}
+              onChange={e => setSelectedSection(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="All">All</option>
+              {section.map(s => (
+                <option key={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Department */}
+          {/* <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Department
+            </label>
+            <select
+              value={selectedDepartment}
+              onChange={e => setSelectedDepartment(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="">All</option>
+              {departments.map(d => (
+                <option key={d}>{d}</option>
+              ))}
+            </select>
+          </div> */}
+
+          {/* Year */}
+          {/* <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Year
+            </label>
+            <select
+              value={selectedYear}
+              onChange={e => setSelectedYear(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="">All</option>
+              {years.map(y => (
+                <option key={y}>{y}</option>
+              ))}
+            </select>
+          </div> */}
+        </div>
+
+        <p className="mt-4 text-sm text-gray-600">
+          Showing <span className="font-semibold">{filteredStudents?.length}</span>{' '}
+          students
+        </p>
+      </div>
 
             {/* Success Message */}
             {saveMessage==="Mock Evaluator Marks saved successfully!" ? (
@@ -423,8 +519,8 @@ try{
             )}
 
             {/* Mock Switcher Tabs */}
-           <div className="flex items-center justify-between">
-             <div className="mb-8 flex gap-3">
+           <div className="flex items-center justify-between mt-5">
+             <div className="mb-2 flex gap-3">
                 {[1, 2].map((mockNum) => (
                     <button
                         key={mockNum}
@@ -444,7 +540,7 @@ try{
                 ))}
             </div>
 
-              <div className="mb-5 flex justify-end">
+              <div className="mb-2 flex justify-end">
                 <button
                     onClick={handleSave}
                     disabled={loading}
@@ -521,7 +617,7 @@ try{
                         </thead>
                         {/* Table Body */}
                         <tbody>
-                            {currentData.map((student, index) =>
+                            {filteredStudents.map((student, index) =>
                                 activeMock === 1
                                     ? renderMock1Row(student, index)
                                     : renderMock2Row(student, index)

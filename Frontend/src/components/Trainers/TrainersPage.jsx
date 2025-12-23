@@ -163,7 +163,7 @@ const logout = async ()=>{
                         </h2>
                     </div>:(
                     <div>
-                    <img src="/KRMU-Logo-NAAC.webp" alt="KRMU-LOGO" width={300} /></div>
+                    <img src="/KRMU-Logo-NAAC.jpg" alt="KRMU-LOGO" width={300} /></div>
                     )
                     }
                     <div className="w-10 h-10 bg-indigo-100 rounded-full flex items-center justify-center">

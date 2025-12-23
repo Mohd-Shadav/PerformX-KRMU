@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './Login.module.css';
 import axios from 'axios';
 
 const Login = ({setRole}) => {
+
+
+    const [windowWidth,setWindowWidth] = useState(window.innerWidth);
 
     const [formData,setFormData] = useState({
         email:'',
@@ -39,11 +42,27 @@ const Login = ({setRole}) => {
         
     }
 
+    useEffect(()=>{
+        const handleResize = () => {
+            setWindowWidth(window.innerWidth);
+        }
+
+        window.addEventListener('resize', handleResize);
+
+        return () => window.removeEventListener('resize', handleResize);
+
+        
+    },[])
+
 
     return (
-        <div className="flex flex-col md:flex-row h-screen">
+        <div className="flex md:flex-row h-screen">
             {/* Left Side */}
             <div className="flex flex-col justify-center items-center w-full md:w-1/2 bg-white p-8">
+
+            <div className="mb-10 self-center">
+                <img src="/KRMU-Logo-NAAC.jpg" alt="KRMU-Logo" className={`w-100 `}/>
+            </div>
                 <h1 className="text-3xl font-bold mb-2">Welcome Back</h1>
                 <p className="text-gray-600 mb-6">Staff & Student Login Portal</p>
                 <form className="w-full max-w-sm">
@@ -60,6 +79,7 @@ const Login = ({setRole}) => {
             </div>
 
             {/* Right Side */}
+            {windowWidth >= 768 &&
             <div className={`relative w-full md:w-1/2 bg-cover bg-center ${styles["background-image-login"]}`}>
                   <div className="absolute inset-0 bg-black/60"></div>
                 <div className="flex flex-col justify-center items-center h-full text-white text-center p-8 relative z-10">
@@ -68,6 +88,7 @@ const Login = ({setRole}) => {
                     {/* Optional: Add subtle 3D floating shapes or GSAP animation here */}
                 </div>
             </div>
+}
         </div>
     );
 };

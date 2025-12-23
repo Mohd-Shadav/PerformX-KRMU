@@ -1,7 +1,9 @@
 import React, { useState, useMemo } from 'react';
-import { ChevronDown, Save, CheckCircle, AlertCircle } from 'lucide-react';
+import { ChevronDown, Save, CheckCircle, AlertCircle, Search } from 'lucide-react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import Loader from '../Loader';
+import NoResultFound from '../NoResultFound';
 
 
 
@@ -17,12 +19,22 @@ const MarksEntryPage = () => {
   const [userRole] = useState(userType.role); 
   const [saveStatus, setSaveStatus] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
+  const [searchQuery, setSearchQuery] = useState('');
 
   // Filter students by section
   const filteredStudents = useMemo(() => {
-    if (selectedSection === 'All') return students;
-    return students.filter((s) => s.section === selectedSection);
-  }, [students, selectedSection]);
+    // if (selectedSection === 'All') return students;
+   
+    return students.filter((s) =>  {
+       const searchMatch =
+        s.name.toLowerCase().includes(searchQuery.toLowerCase()) ||
+        s.rollno.toLowerCase().includes(searchQuery.toLowerCase());
+
+      
+      return ( searchMatch &&
+       (selectedSection=== 'All' || s.section === selectedSection) )
+    });
+  }, [students,searchQuery, selectedSection]);
 
  
  const fetchStudentData = async () => {
@@ -34,12 +46,9 @@ const MarksEntryPage = () => {
     );
 
     if (res.status === 200) {
-      setStudents(prev => {
-        const updated = [...prev, ...res.data];
-        setSection([...new Set(updated.map(s => s.section))]);
-        return updated;
-      });
-
+      
+         setStudents(res.data);
+          setSection([...new Set(res.data.map(s => s.section))]);
    
     }
   } catch (err) {
@@ -186,40 +195,83 @@ else{
 
       {/* Main Content */}
       <div className="px-6 py-8 sm:px-8">
-        {/* Filter Section */}
-        <div className="mb-8 rounded-lg border border-gray-200 bg-white p-4 shadow-sm">
-          <div className="flex items-center gap-4">
-            <label className="text-sm font-semibold text-gray-700">
-              Filter by Section:
+       
+            {/* Filters */}
+      <div className="px-6 py-6 bg-gray-50 border-b border-gray-200">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+          {/* Search */}
+          <div className="lg:col-span-2">
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Search
             </label>
             <div className="relative">
-              <select
-                value={selectedSection}
-                onChange={(e) => setSelectedSection(e.target.value)}
-                className="appearance-none rounded-lg border border-gray-300 bg-white px-4 py-2 pr-10 text-sm text-gray-700 transition duration-200 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-100"
-              >
-
-                {/* {
-                  section.map((sec)=>(
-                    <option key={sec} value={sec}>{`Section ${sec}`}</option>
-                  ))
-                } */}
-                <option value="All">All Sections</option>
-                <option value="SectionA">Section A</option>
-                <option value="SectionB">Section B</option>
-                <option value="SectionC">Section C</option>
-                <option value="SectionD">Section D</option>
-                 <option value="SectionE">Section E</option>
-                <option value="SectionF">Section F</option>
-                <option value="SectionG">Section G</option>
-            
-                
-              </select>
-              <ChevronDown className="pointer-events-none absolute right-3 top-2.5 h-4 w-4 text-gray-400" />
+              <Search className="absolute left-3 top-2.5 w-5 h-5 text-gray-400" />
+              <input
+                value={searchQuery}
+                onChange={e => setSearchQuery(e.target.value)}
+                placeholder="Name or Roll No"
+                className="w-full pl-10 pr-4 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+              />
             </div>
           </div>
-          
+
+          {/* Section */}
+          <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Section
+            </label>
+            <select
+              value={selectedSection}
+              onChange={e => setSelectedSection(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="All">All</option>
+              {section.map(s => (
+                <option key={s}>{s}</option>
+              ))}
+            </select>
+          </div>
+
+          {/* Department */}
+          {/* <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Department
+            </label>
+            <select
+              value={selectedDepartment}
+              onChange={e => setSelectedDepartment(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="">All</option>
+              {departments.map(d => (
+                <option key={d}>{d}</option>
+              ))}
+            </select>
+          </div> */}
+
+          {/* Year */}
+          {/* <div>
+            <label className="text-sm font-medium text-gray-700 mb-1 block">
+              Year
+            </label>
+            <select
+              value={selectedYear}
+              onChange={e => setSelectedYear(e.target.value)}
+              className="w-full px-3 py-2 border rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none"
+            >
+              <option value="">All</option>
+              {years.map(y => (
+                <option key={y}>{y}</option>
+              ))}
+            </select>
+          </div> */}
         </div>
+
+        <p className="mt-4 text-sm text-gray-600">
+          Showing <span className="font-semibold">{filteredStudents?.length}</span>{' '}
+          students
+        </p>
+      </div>
 
         {/* Save Status */}
          <div className="my-8 flex justify-end">
@@ -323,8 +375,25 @@ else{
 
               
 
-              {filteredStudents.map((student, idx) => (
-                <tr
+              {students.length <=0 ? (
+                <tr>
+                  <td
+                    colSpan="12"
+                    className="px-4 py-3 text-center text-gray-500"
+                  >
+                   <Loader/>
+                  </td>
+                </tr>
+              ) : filteredStudents.length<=0 ? (
+                <tr>
+                  <td
+                    colSpan="12"  className="px-4 py-3 text-center text-gray-500">
+                     <NoResultFound/>
+                    </td>
+                    </tr>
+
+              ) :filteredStudents.map((student, idx) => (
+                  <tr
                   key={idx}
                   className={`border-b border-gray-200 transition duration-150 hover:bg-indigo-50 ${
                     idx % 2 === 0 ? 'bg-white' : 'bg-gray-50'
