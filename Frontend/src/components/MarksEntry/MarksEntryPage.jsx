@@ -23,7 +23,7 @@ const MarksEntryPage = () => {
 
   // Filter students by section
   const filteredStudents = useMemo(() => {
-    // if (selectedSection === 'All') return students;
+
    
     return students.filter((s) =>  {
        const searchMatch =
