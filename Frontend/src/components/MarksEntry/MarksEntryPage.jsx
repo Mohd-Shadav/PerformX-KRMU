@@ -507,7 +507,7 @@ else{
                       name='aptitudeTest'
                      onChange={(e) => handleInputChange(e, student._id)}
                       disabled={!isFieldEditable('aptitudeTest')}
-                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.technicalAssessment?.aptitudeTest>50 && 'text-red-500'} ${
+                      className={`w-16 rounded border px-2 py-1 text-center text-sm transition duration-200 ${student?.aptitudeAssessment?.aptitudeTest>50 && 'text-red-500'} ${
                         isFieldEditable('aptitudeTest')
                           ? 'border-blue-300 bg-white focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-100'
                           : 'border-gray-200 bg-gray-100 text-gray-500 cursor-not-allowed'

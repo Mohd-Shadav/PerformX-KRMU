@@ -45,16 +45,18 @@ export default function StudentProfile() {
 
                     <div className="px-6 sm:px-8 pb-8">
                         {/* Avatar Section */}
-                        <div className="flex flex-col sm:flex-row sm:items-end sm:gap-6 mb-8">
-                            <div className="mb-4 sm:mb-0">
-                                <img
-                                    src="https://api.dicebear.com/7.x/avataaars/svg?seed=Alex"
-                                    alt="Profile Avatar"
-                                    className="w-32 h-32 rounded-full border-4 border-white shadow-lg object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
-                                />
-                            </div>
+                       <div className="flex flex-col sm:flex-row  sm:items-end sm:gap-6 mb-8">
+                        <div className="relative group mb-4 sm:mb-0 ">
+  <div className="w-32 h-32 self-center rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-orange-500 p-[3px] shadow-xl transition-transform duration-300 group-hover:scale-105">
+    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+      <span className="text-6xl font-bold text-gray-800 select-none">
+        {studentData?.name?.trim()?.charAt(0)?.toUpperCase() || '?'}
+      </span>
+    </div>
+  </div>
+</div>
 
-                            <div className="flex-1">
+                            <div className="self-center flex-1 ">
                                 <h2 className="text-3xl font-bold text-gray-900 mb-1">{studentData?.name}</h2>
                                 <p className="text-indigo-600 font-semibold text-lg">{studentData?.section}</p>
                             </div>

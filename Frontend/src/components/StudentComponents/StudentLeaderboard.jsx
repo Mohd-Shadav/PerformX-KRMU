@@ -1,18 +1,21 @@
-import React, { useState, useMemo } from 'react';
+import React, { useState, useMemo, useEffect } from 'react';
 import { Trophy, TrendingUp } from 'lucide-react';
+import axios from 'axios';
+import Loader from '../Loader';
 
 const StudentLeaderboard = () => {
     // Mock student data with technical and aptitude marks
-    const [students] = useState([
-        { id: 1, rollNo: 'CS001', name: 'Aarav Sharma', section: 'A', department: 'CS', year: '3rd', technical: 85, aptitude: 88, total: 173 },
-        { id: 2, rollNo: 'CS002', name: 'Priya Patel', section: 'A', department: 'CS', year: '3rd', technical: 92, aptitude: 90, total: 182 },
-        { id: 3, rollNo: 'EC001', name: 'Rohan Verma', section: 'B', department: 'EC', year: '3rd', technical: 78, aptitude: 85, total: 163 },
-        { id: 4, rollNo: 'CS003', name: 'Ananya Singh', section: 'A', department: 'CS', year: '2nd', technical: 88, aptitude: 87, total: 175 },
-        { id: 5, rollNo: 'ME001', name: 'Vikram Kumar', section: 'C', department: 'ME', year: '3rd', technical: 75, aptitude: 82, total: 157 },
-        { id: 6, rollNo: 'CS004', name: 'Neha Gupta', section: 'B', department: 'CS', year: '2nd', technical: 90, aptitude: 92, total: 183 },
-        { id: 7, rollNo: 'EC002', name: 'Arjun Reddy', section: 'B', department: 'EC', year: '3rd', technical: 82, aptitude: 80, total: 162 },
-        { id: 8, rollNo: 'CS005', name: 'Divya Nair', section: 'A', department: 'CS', year: '3rd', technical: 87, aptitude: 85, total: 172 },
-    ]);
+    // const [students] = useState([
+    //     { id: 1, rollNo: 'CS001', name: 'Aarav Sharma', section: 'A', department: 'CS', year: '3rd', technical: 85, aptitude: 88, total: 173 },
+    //     { id: 2, rollNo: 'CS002', name: 'Priya Patel', section: 'A', department: 'CS', year: '3rd', technical: 92, aptitude: 90, total: 182 },
+    //     { id: 3, rollNo: 'EC001', name: 'Rohan Verma', section: 'B', department: 'EC', year: '3rd', technical: 78, aptitude: 85, total: 163 },
+    //     { id: 4, rollNo: 'CS003', name: 'Ananya Singh', section: 'A', department: 'CS', year: '2nd', technical: 88, aptitude: 87, total: 175 },
+    //     { id: 5, rollNo: 'ME001', name: 'Vikram Kumar', section: 'C', department: 'ME', year: '3rd', technical: 75, aptitude: 82, total: 157 },
+    //     { id: 6, rollNo: 'CS004', name: 'Neha Gupta', section: 'B', department: 'CS', year: '2nd', technical: 90, aptitude: 92, total: 183 },
+    //     { id: 7, rollNo: 'EC002', name: 'Arjun Reddy', section: 'B', department: 'EC', year: '3rd', technical: 82, aptitude: 80, total: 162 },
+    //     { id: 8, rollNo: 'CS005', name: 'Divya Nair', section: 'A', department: 'CS', year: '3rd', technical: 87, aptitude: 85, total: 172 },
+    // ]);
+    const [students,setStudents] = useState([]);
 
     const [filters, setFilters] = useState({
         section: '',
@@ -21,7 +24,7 @@ const StudentLeaderboard = () => {
     });
 
     // Filter and rank students
-    const rankedStudents = useMemo(() => {
+const rankedStudents = useMemo(() => {
   let filtered = students;
 
   if (filters.section) filtered = filtered.filter(s => s.section === filters.section);
@@ -29,27 +32,29 @@ const StudentLeaderboard = () => {
   if (filters.year) filtered = filtered.filter(s => s.year === filters.year);
 
   const sorted = [...filtered].sort(
-    (a, b) => b.total - a.total || a.name.localeCompare(b.name)
+    (a, b) => b.totalMarks - a.totalMarks || a.name.localeCompare(b.name)
   );
 
-  let prevTotal = null;
-  let prevRank = 0;
-
   return sorted.map((student, index) => {
-    let rank;
+    const totalTechnical =
+      (student?.technicalAssessment?.mock ?? 0) +
+      (student?.technicalAssessment?.oops ?? 0) +
+      (student?.technicalAssessment?.dbms ?? 0) +
+      (student?.technicalAssessment?.problemSolving ?? 0) +
+      (student?.technicalAssessment?.os ?? 0);
 
-    if (student.total === prevTotal) {
-      rank = prevRank;           // same marks → same rank
-    } else {
-      rank = index + 1;          // new rank
-    }
+    const totalAptitude =  (student?.aptitudeAssessment?.aptitudeTest ?? 0) +
+      (student?.aptitudeAssessment?.cocubesAmcat ?? 0)
 
-    prevTotal = student.total;
-    prevRank = rank;
-
-    return { ...student, rank };
+    return {
+      ...student,
+      totalTechnical,
+      totalAptitude,
+      rank: index + 1 
+    };
   });
 }, [students, filters]);
+
 
 
     const getPerformanceBadge = (marks) => {
@@ -72,6 +77,22 @@ const StudentLeaderboard = () => {
         return '';
     };
 
+
+    useEffect(()=>{
+        // Fetch student data from API
+        const fetchStudents = async () => {
+            try {
+                
+                const response = await axios.get('http://localhost:5000/student/allstudentdata');
+            
+                setStudents(response.data);
+            } catch (error) {
+                console.error('Error fetching student data:', error);
+            }
+        }
+        fetchStudents();
+    },[])
+
     return (
         <div className="min-h-screen bg-white p-4 md:p-8">
             {/* Header */}
@@ -84,6 +105,22 @@ const StudentLeaderboard = () => {
             </div>
 
             {/* Filters */}
+
+{/* <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-6 rounded-lg shadow-sm">
+             <div>
+                    <label className="block text-sm font-semibold text-gray-700 mb-2">Section</label>
+                    <select
+                        value={filters.section}
+                        onChange={(e) => setFilters({ ...filters, section: e.target.value })}
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                    >
+                        <option value="">All Sections</option>
+                        <option value="A">Section A</option>
+                        <option value="B">Section B</option>
+                        <option value="C">Section C</option>
+                    </select>
+                </div>
+                </div> */}
             {/* <div className="mb-8 grid grid-cols-1 md:grid-cols-3 gap-4 bg-gray-50 p-6 rounded-lg shadow-sm">
                 <div>
                     <label className="block text-sm font-semibold text-gray-700 mb-2">Section</label>
@@ -161,14 +198,14 @@ const StudentLeaderboard = () => {
                                             # {student.rank}
                                         </span>
                                     </td>
-                                    <td className="px-6 py-4 text-gray-900 font-medium">{student.rollNo}</td>
-                                    <td className="px-6 py-4 text-gray-900 font-medium">{student.name}</td>
+                                    <td className="px-6 py-4 text-gray-900 font-medium">{student?.rollno}</td>
+                                    <td className="px-6 py-4 text-gray-900 font-medium">{student?.name}</td>
                                     <td className="px-6 py-4 text-gray-700">{student.section}</td>
-                                    <td className="px-6 py-4 text-center text-gray-700">{student.technical}</td>
-                                    <td className="px-6 py-4 text-center text-gray-700">{student.aptitude}</td>
+                                    <td className="px-6 py-4 text-center text-gray-700">{student?.totalTechnical}</td>
+                                    <td className="px-6 py-4 text-center text-gray-700">{student?.totalAptitude}</td>
                                     <td className="px-6 py-4 text-center">
                                         <span className={`font-bold text-lg ${isTopThree ? 'text-indigo-600' : 'text-gray-900'}`}>
-                                            {student.total}
+                                            {student?.totalMarks}
                                         </span>
                                     </td>
                                     <td className="px-6 py-4 text-center">
@@ -186,12 +223,12 @@ const StudentLeaderboard = () => {
             {/* Mobile Card View */}
             <div className="md:hidden space-y-4">
                 {rankedStudents.map((student, index) => {
-                    const badge = getPerformanceBadge(student.total);
-                    const medal = getMedalEmoji(student.rank);
-                    const isTopThree = student.rank <= 3;
+                    const badge = getPerformanceBadge(student?.totalMarks);
+                    const medal = getMedalEmoji(student?.rank);
+                    const isTopThree = student?.rank <= 3;
                     return (
                         <div
-                            key={student.id}
+                            key={student._id}
                             className={`p-5 rounded-xl border-2 transition duration-300 ease-in-out ${
                                 isTopThree
                                     ? 'border-indigo-300 bg-gradient-to-r from-indigo-50 to-white shadow-md'
@@ -203,8 +240,8 @@ const StudentLeaderboard = () => {
                                 <div className="flex items-center gap-3">
                                     {medal && <span className="text-3xl">{medal}</span>}
                                     <div>
-                                        <p className="text-2xl font-bold text-indigo-600">#{student.rank}</p>
-                                        <p className="text-xs text-gray-500">{student.rollNo}</p>
+                                        <p className="text-2xl font-bold text-indigo-600">#{student?.rank}</p>
+                                        <p className="text-xs text-gray-500">{student.rollno}</p>
                                     </div>
                                 </div>
                                 <span className={`px-3 py-1 rounded-full text-xs font-semibold ${badge.color}`}>
@@ -213,25 +250,25 @@ const StudentLeaderboard = () => {
                             </div>
 
                             <div className="space-y-2 mb-3">
-                                <p className="text-lg font-bold text-gray-900">{student.name}</p>
+                                <p className="text-lg font-bold text-gray-900">{student?.name}</p>
                                 <div className="flex justify-between text-sm text-gray-600">
-                                    <span>{student.section}</span>
-                                    <span>{student.department}</span>
+                                    <span>{student?.section}</span>
+                                    <span>{student?.department}</span>
                                 </div>
                             </div>
 
                             <div className="grid grid-cols-3 gap-2 pt-3 border-t border-gray-200">
                                 <div className="text-center">
                                     <p className="text-xs text-gray-500 mb-1">Technical</p>
-                                    <p className="font-bold text-gray-900">{student.technical}</p>
+                                    <p className="font-bold text-gray-900">{student?.totalTechnical}</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-xs text-gray-500 mb-1">Aptitude</p>
-                                    <p className="font-bold text-gray-900">{student.aptitude}</p>
+                                    <p className="font-bold text-gray-900">{student?.totalAptitude}</p>
                                 </div>
                                 <div className="text-center">
                                     <p className="text-xs text-gray-500 mb-1">Total</p>
-                                    <p className="font-bold text-indigo-600 text-lg">{student.total}</p>
+                                    <p className="font-bold text-indigo-600 text-lg">{student?.totalMarks}</p>
                                 </div>
                             </div>
                         </div>
@@ -240,7 +277,12 @@ const StudentLeaderboard = () => {
             </div>
 
             {/* Empty State */}
-            {rankedStudents.length === 0 && (
+            {students.length === 0 ? (
+                <div className="text-center py-12">
+                    
+                   <Loader/>
+                </div>
+            ):rankedStudents.length === 0 && (
                 <div className="text-center py-12">
                     <TrendingUp className="w-12 h-12 text-gray-300 mx-auto mb-4" />
                     <p className="text-gray-600 text-lg">No students match the selected filters.</p>
