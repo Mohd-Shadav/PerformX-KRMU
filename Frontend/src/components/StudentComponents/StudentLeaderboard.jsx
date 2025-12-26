@@ -4,17 +4,7 @@ import axios from 'axios';
 import Loader from '../Loader';
 
 const StudentLeaderboard = () => {
-    // Mock student data with technical and aptitude marks
-    // const [students] = useState([
-    //     { id: 1, rollNo: 'CS001', name: 'Aarav Sharma', section: 'A', department: 'CS', year: '3rd', technical: 85, aptitude: 88, total: 173 },
-    //     { id: 2, rollNo: 'CS002', name: 'Priya Patel', section: 'A', department: 'CS', year: '3rd', technical: 92, aptitude: 90, total: 182 },
-    //     { id: 3, rollNo: 'EC001', name: 'Rohan Verma', section: 'B', department: 'EC', year: '3rd', technical: 78, aptitude: 85, total: 163 },
-    //     { id: 4, rollNo: 'CS003', name: 'Ananya Singh', section: 'A', department: 'CS', year: '2nd', technical: 88, aptitude: 87, total: 175 },
-    //     { id: 5, rollNo: 'ME001', name: 'Vikram Kumar', section: 'C', department: 'ME', year: '3rd', technical: 75, aptitude: 82, total: 157 },
-    //     { id: 6, rollNo: 'CS004', name: 'Neha Gupta', section: 'B', department: 'CS', year: '2nd', technical: 90, aptitude: 92, total: 183 },
-    //     { id: 7, rollNo: 'EC002', name: 'Arjun Reddy', section: 'B', department: 'EC', year: '3rd', technical: 82, aptitude: 80, total: 162 },
-    //     { id: 8, rollNo: 'CS005', name: 'Divya Nair', section: 'A', department: 'CS', year: '3rd', technical: 87, aptitude: 85, total: 172 },
-    // ]);
+  
     const [students,setStudents] = useState([]);
 
     const [filters, setFilters] = useState({
